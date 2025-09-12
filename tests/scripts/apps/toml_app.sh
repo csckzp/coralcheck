@@ -15,7 +15,7 @@ do
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t3_coral ./target/release/coral -d ./tests/test_docs/toml/t3.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t3_coral.txt --prove
 
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t3_coral ./target/release/coral -d ./tests/test_docs/toml/t3.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t3_coral.txt --verify
+./target/release/coral -d ./tests/test_docs/toml/t3.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t3_coral.txt --verify
 done 
 done 
 
@@ -30,7 +30,7 @@ do
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t2_coral ./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t2_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t2_coral ./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t2_coral.txt --verify
+./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t2_coral.txt --verify
 done 
 done 
 
@@ -45,7 +45,7 @@ do
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t1_coral ./target/release/coral -d ./tests/test_docs/toml/t1.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t1_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/toml_t1_coral ./target/release/coral -d ./tests/test_docs/toml/t1.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t1_coral.txt --verify
-done 
+./target/release/coral -d ./tests/test_docs/toml/t1.txt -g ./grammars/toml.pest -b "$j" -m ./tests/results/timings/apps/toml_t1_coral.txt --verify
+# done 
 done 
 

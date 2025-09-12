@@ -13,6 +13,9 @@ do
 ./target/release/coral -d ./tests/test_docs/json/bank_citi.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_bank_citi_coral.txt --commit
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_bank_citi_coral ./target/release/coral -d ./tests/test_docs/json/bank_citi.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_bank_citi_coral.txt --prove
+
+./target/release/coral -d ./tests/test_docs/json/bank_citi.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_bank_citi_coral.txt --verify
+
 done 
 done 
 
@@ -26,6 +29,8 @@ do
 ./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_bank_plaid_coral.txt --commit
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_bank_plaid_coral ./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_bank_plaid_coral.txt --prove
+
+./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_bank_plaid_coral.txt --verify
 done 
 done 
 
@@ -39,6 +44,9 @@ do
 ./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_dmv_veratad_coral.txt --commit
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_dmv_veratad_coral ./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_dmv_veratad_coral.txt --prove
+
+./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_dmv_veratad_coral.txt --verify
+
 done 
 done 
 
@@ -52,6 +60,8 @@ do
 ./target/release/coral -d ./tests/test_docs/json/draftgroups_dk.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_dk_coral.txt --commit
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_dk_coral ./target/release/coral -d ./tests/test_docs/json/draftgroups_dk.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_dk_coral.txt --prove
+
+./target/release/coral -d ./tests/test_docs/json/draftgroups_dk.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_dk_coral.txt --verify
 done 
 done 
 
@@ -65,22 +75,10 @@ do
 ./target/release/coral -d ./tests/test_docs/json/hibp_small.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_hibp_small_coral.txt --commit
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_hibps_coral ./target/release/coral -d ./tests/test_docs/json/hibp_small.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_hibp_small_coral.txt --prove
+
+./target/release/coral -d ./tests/test_docs/json/hibp_small.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_hibp_small_coral.txt --verify
 done 
 done 
-
-# echo "hibpl" 
-# declare -a b_h=(400 800 1200 1806 2107)
-# # for i in {0..10}
-# for i in {0..5}
-# do 
-# echo "$i"
-# for j in "${b_h[@]}"
-# do
-# ./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_hibp_coral.txt --commit
-
-# RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_hibp_coral ./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_hibp_coral.txt --prove
-# done 
-# done 
 
 echo "jwt" 
 declare -a b_jwt=(109 118 128 141 157 176 201)
@@ -90,7 +88,10 @@ echo "$i"
 for j in "${b_jwt[@]}"
 do
 ./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_jwt_coral.txt --commit
+
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/json_jwt_coral ./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_jwt_coral.txt --prove
+
+./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b "$j" -m ./tests/results/timings/apps/json_jwt_coral.txt --verify
 done 
 done 
 

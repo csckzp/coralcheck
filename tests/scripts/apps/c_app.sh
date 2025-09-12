@@ -13,7 +13,7 @@ do
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_c1_coral ./target/release/coral -d ./tests/test_docs/c/c1.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c1_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_c1_coral ./target/release/coral -d ./tests/test_docs/c/c1.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c1_coral.txt --verify
+./target/release/coral -d ./tests/test_docs/c/c1.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c1_coral.txt --verify
 done 
 done 
 
@@ -28,7 +28,7 @@ do
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_c2_coral ./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c2_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_c2_coral ./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c2_coral.txt --verify
+./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c2_coral.txt --verify
 
 done 
 done 
@@ -44,7 +44,7 @@ do
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_c3_coral ./target/release/coral -d ./tests/test_docs/c/c3.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c3_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_c3_coral ./target/release/coral -d ./tests/test_docs/c/c3.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c3_coral.txt --verify
+./target/release/coral -d ./tests/test_docs/c/c3.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_c3_coral.txt --verify
 done 
 done 
 
@@ -59,6 +59,6 @@ do
 
 RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_llvm_coral ./target/release/coral -d ./tests/test_docs/c/llvm_test_puzzle.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_llvm_coral.txt --prove
 
-RUST_BACKTRACE=1 gtime -v -a -o ./tests/results/memory/apps/c_llvm_coral ./target/release/coral -d ./tests/test_docs/c/llvm_test_puzzle.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_llvm_coral.txt --verify
+./target/release/coral -d ./tests/test_docs/c/llvm_test_puzzle.txt -g ./grammars/c_simple.pest -b "$j" -m ./tests/results/timings/apps/c_llvm_coral.txt --verify
 done 
 done 
