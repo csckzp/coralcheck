@@ -32,7 +32,7 @@ tracing-subscriber = { version = "0.3" }
 memory-stats = "1.1.0"
 metrics = {path="metrics"}
 
-segmented_circuit_memory = { git = "https://github.com/jkwoods/segmented_circuit_memory" }
+segmented_circuit_memory = { git = "https://github.com/eniac/segmented-memory" }
 nova-snark = { git = "https://github.com/jkwoods/Nova", default-features = false }
 #nova-snark = { path = "../jess_Nova", default-features = false }
 bellpepper-core = { version="0.4.0", default-features = false }

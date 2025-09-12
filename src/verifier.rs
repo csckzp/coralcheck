@@ -74,7 +74,7 @@ pub fn verify(
 
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "eq_checks");
-
+    
     v_i.mem.verifier_checks(&zn, &ci);
     #[cfg(feature = "metrics")]
     {
