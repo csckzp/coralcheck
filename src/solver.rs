@@ -10,6 +10,7 @@ use segmented_circuit_memory::memory::mem_type::MemType;
 use segmented_circuit_memory::memory::nebula::{MemBuilder, RunningMem};
 use sha2::{Digest, Sha256};
 use std::{cmp::max, usize};
+use nova_snark::traits::ROConstants;
 
 #[cfg(feature = "metrics")]
 use metrics::metrics::{log, log::Component};
@@ -399,7 +400,7 @@ pub struct CoralStepCircuit<F: ArkPrimeField> {
     pub tree_null_val: usize,
     //Memory Obj
     pub mem: Option<RunningMem<F>>,
-    pub key_length: usize,
+    pub key_lengths: Vec<usize>,
     //Rule lookup witnesses
     pub switch_wits: Vec<F>,
     pub rule_memory_vec_wits: Vec<Vec<F>>,
@@ -465,7 +466,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
             np_ram_offset,
             mem_ops: 3 * batch_size,
             stack_ops: (g.max_rule_size + 3) * batch_size,
-            key_length: 0,
+            key_lengths: vec![0],
             //Rule lookup witnesses
             switch_wits: Vec::new(),
             rule_memory_vec_wits: Vec::new(),
@@ -571,6 +572,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
     pub fn solve(
         &mut self,
         g: &GrammarGraph,
+        r0_consts: ROConstants<E1>
     ) -> Result<(Vec<Vec<N1>>, Vec<Vec<N1>>, CoralStepCircuit<F>), SynthesisError> {
         #[cfg(feature = "metrics")]
         {
@@ -835,6 +837,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
         #[cfg(feature = "metrics")]
         log::tic(Component::Solver, "ic");
         let (blinds, ram_hints, ram_batch_size, rm) = mem_builder.new_running_mem(
+            r0_consts,
             vec![
                 (self.tree_ram_tag, self.batch_size),
                 (self.np_ram_tag, self.batch_size),
@@ -852,7 +855,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
             "./ppot_0080_23.ptau",
         );
         self.mem = Some(rm);
-        self.key_length = ram_batch_size;
+        self.key_lengths = ram_batch_size;
 
         #[cfg(feature = "metrics")]
         {

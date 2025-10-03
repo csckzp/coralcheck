@@ -125,7 +125,7 @@ pub fn gen_pp<AF: ArkPrimeField>(empty_csc: &mut CoralStepCircuit<AF>) -> Public
         &mut circuit_primary,
         &*default_ck_hint(),
         &*default_ck_hint(),
-        vec![empty_csc.key_length],
+        empty_csc.key_lengths.clone(),
         Some("./ppot_0080_23.ptau"),
     )
     .unwrap();
