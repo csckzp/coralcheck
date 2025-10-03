@@ -1,0 +1,553 @@
+c1
+0
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+RO setup: 105.748375ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.1879605s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+verifier_checks pub hash 111.25µs
+verifier_checks is*ws == rs*fs 333ns
+verifier_checks stacks 125ns
+verifier_checks ic cmts 208ns
+RO setup: 104.826083ms
+verifier_checks randomness 105.199833ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+RO setup: 104.87825ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.171180292s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+verifier_checks pub hash 82.042µs
+verifier_checks is*ws == rs*fs 250ns
+verifier_checks stacks 209ns
+verifier_checks ic cmts 125ns
+RO setup: 105.257125ms
+verifier_checks randomness 105.640083ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+RO setup: 104.984208ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.116877334s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+verifier_checks pub hash 81.875µs
+verifier_checks is*ws == rs*fs 375ns
+verifier_checks stacks 208ns
+verifier_checks ic cmts 125ns
+RO setup: 105.692166ms
+verifier_checks randomness 106.075125ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+RO setup: 105.111291ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.111858208s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+verifier_checks pub hash 106.375µs
+verifier_checks is*ws == rs*fs 250ns
+verifier_checks stacks 166ns
+verifier_checks ic cmts 250ns
+RO setup: 105.527417ms
+verifier_checks randomness 105.907959ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+RO setup: 129.989334ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.15873075s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+verifier_checks pub hash 127µs
+verifier_checks is*ws == rs*fs 416ns
+verifier_checks stacks 167ns
+verifier_checks ic cmts 42ns
+RO setup: 122.76025ms
+verifier_checks randomness 123.17775ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+RO setup: 107.125583ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.174615542s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+verifier_checks pub hash 104.125µs
+verifier_checks is*ws == rs*fs 458ns
+verifier_checks stacks 208ns
+verifier_checks ic cmts 167ns
+RO setup: 105.652583ms
+verifier_checks randomness 106.03075ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+c2
+0
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+RO setup: 104.90075ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.863073542s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+verifier_checks pub hash 98.625µs
+verifier_checks is*ws == rs*fs 291ns
+verifier_checks stacks 167ns
+verifier_checks ic cmts 84ns
+RO setup: 105.394625ms
+verifier_checks randomness 105.769667ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+RO setup: 105.489125ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.890782125s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+verifier_checks pub hash 93.458µs
+verifier_checks is*ws == rs*fs 250ns
+verifier_checks stacks 167ns
+verifier_checks ic cmts 208ns
+RO setup: 104.980667ms
+verifier_checks randomness 105.352708ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+RO setup: 105.303583ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.887575542s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+verifier_checks pub hash 107.417µs
+verifier_checks is*ws == rs*fs 333ns
+verifier_checks stacks 167ns
+verifier_checks ic cmts 83ns
+RO setup: 106.43475ms
+verifier_checks randomness 106.829ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+RO setup: 105.014667ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.884101084s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+verifier_checks pub hash 138.208µs
+verifier_checks is*ws == rs*fs 416ns
+verifier_checks stacks 209ns
+verifier_checks ic cmts 125ns
+RO setup: 105.229542ms
+verifier_checks randomness 105.603042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+RO setup: 106.04625ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.897202875s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+verifier_checks pub hash 113.583µs
+verifier_checks is*ws == rs*fs 166ns
+verifier_checks stacks 166ns
+verifier_checks ic cmts 125ns
+RO setup: 107.593ms
+verifier_checks randomness 107.993042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+RO setup: 105.820167ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 1.908654666s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+verifier_checks pub hash 92.625µs
+verifier_checks is*ws == rs*fs 416ns
+verifier_checks stacks 125ns
+verifier_checks ic cmts 83ns
+RO setup: 106.20375ms
+verifier_checks randomness 106.585042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+c3
+0
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+RO setup: 106.835709ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Compressed
+Proving time: 2.72533225s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+verifier_checks pub hash 110.125µs
+verifier_checks is*ws == rs*fs 292ns
+verifier_checks stacks 208ns
+verifier_checks ic cmts 291ns
+RO setup: 105.554417ms
+verifier_checks randomness 105.936583ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+RO setup: 105.486417ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Compressed
+Proving time: 2.724731208s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+verifier_checks pub hash 99.417µs
+verifier_checks is*ws == rs*fs 208ns
+verifier_checks stacks 125ns
+verifier_checks ic cmts 209ns
+RO setup: 105.063875ms
+verifier_checks randomness 105.435875ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+RO setup: 105.156834ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Compressed
+Proving time: 2.70958325s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+verifier_checks pub hash 137.959µs
+verifier_checks is*ws == rs*fs 375ns
+verifier_checks stacks 167ns
+verifier_checks ic cmts 209ns
+RO setup: 104.983584ms
+verifier_checks randomness 105.357375ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+RO setup: 104.98025ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Compressed
+Proving time: 2.749021917s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+verifier_checks pub hash 103.125µs
+verifier_checks is*ws == rs*fs 291ns
+verifier_checks stacks 125ns
+verifier_checks ic cmts 333ns
+RO setup: 108.231417ms
+verifier_checks randomness 108.64175ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+RO setup: 106.108708ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Compressed
+Proving time: 2.739986458s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+verifier_checks pub hash 120.375µs
+verifier_checks is*ws == rs*fs 250ns
+verifier_checks stacks 83ns
+verifier_checks ic cmts 209ns
+RO setup: 105.02025ms
+verifier_checks randomness 105.393083ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+RO setup: 105.09ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Compressed
+Proving time: 2.804542625s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+verifier_checks pub hash 87.459µs
+verifier_checks is*ws == rs*fs 375ns
+verifier_checks stacks 125ns
+verifier_checks ic cmts 125ns
+RO setup: 105.375166ms
+verifier_checks randomness 105.74775ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+llvm
+0
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+RO setup: 106.646875ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 7.722894958s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+verifier_checks pub hash 86.541µs
+verifier_checks is*ws == rs*fs 333ns
+verifier_checks stacks 166ns
+verifier_checks ic cmts 125ns
+RO setup: 105.932791ms
+verifier_checks randomness 106.319167ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+RO setup: 105.6265ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 7.518119875s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+verifier_checks pub hash 102.083µs
+verifier_checks is*ws == rs*fs 292ns
+verifier_checks stacks 167ns
+verifier_checks ic cmts 83ns
+RO setup: 105.256084ms
+verifier_checks randomness 105.629125ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+RO setup: 105.164417ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 7.396708292s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+verifier_checks pub hash 125.291µs
+verifier_checks is*ws == rs*fs 375ns
+verifier_checks stacks 166ns
+verifier_checks ic cmts 42ns
+RO setup: 106.6965ms
+verifier_checks randomness 107.095292ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+RO setup: 105.493459ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 7.861042917s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+verifier_checks pub hash 202.333µs
+verifier_checks is*ws == rs*fs 292ns
+verifier_checks stacks 166ns
+verifier_checks ic cmts 167ns
+RO setup: 105.371ms
+verifier_checks randomness 105.746125ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+RO setup: 104.920208ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 8.852429542s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+verifier_checks pub hash 174.791µs
+verifier_checks is*ws == rs*fs 375ns
+verifier_checks stacks 166ns
+verifier_checks ic cmts 250ns
+RO setup: 106.622125ms
+verifier_checks randomness 107.039208ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+RO setup: 113.566833ms
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Compressed
+Proving time: 8.266074042s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
