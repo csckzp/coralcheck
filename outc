@@ -1,0 +1,57 @@
+llvm
+0
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Compressed
+Proving time: 5.705753792s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Time to verify hashes: 827.583µs
+Time to verify foldings: 2.446375ms
+Time to derandomize: 540.833µs
+Time to verify SNARKs: 61.4565ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Compressed
+Proving time: 5.209307625s
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Time to verify hashes: 842.042µs
+Time to verify foldings: 2.419708ms
+Time to derandomize: 535.5µs
+Time to verify SNARKs: 63.116584ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt

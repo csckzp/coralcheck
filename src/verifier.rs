@@ -33,7 +33,11 @@ pub struct VerifierDocCommit {
 }
 
 pub fn setup(empty_circuit: &mut CoralStepCircuit<AF>) -> VerifierInfo<AF> {
+    #[cfg(feature = "metrics")]
+    log::tic(Component::Generator, "nova_pp_gen_v");
     let pp = gen_pp(empty_circuit);
+    #[cfg(feature = "metrics")]
+    log::stop(Component::Generator, "nova_pp_gen_v");
 
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "snark_params");

@@ -1,0 +1,1125 @@
+ark
+0
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.218560333s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 841.166µs
+Time to verify foldings: 2.4245ms
+Time to derandomize: 536.541µs
+Time to verify SNARKs: 44.607791ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.491453708s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 868.125µs
+Time to verify foldings: 2.447166ms
+Time to derandomize: 531.583µs
+Time to verify SNARKs: 43.994416ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.249348416s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 858.041µs
+Time to verify foldings: 2.523708ms
+Time to derandomize: 537.833µs
+Time to verify SNARKs: 42.491583ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Proving round 0
+Solving thread starting...
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.559899875s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 875.334µs
+Time to verify foldings: 2.476666ms
+Time to derandomize: 537.833µs
+Time to verify SNARKs: 43.422792ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.167110667s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 866.792µs
+Time to verify foldings: 2.478167ms
+Time to derandomize: 559.75µs
+Time to verify SNARKs: 42.29575ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 6.922745167s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 871.084µs
+Time to verify foldings: 2.441917ms
+Time to derandomize: 546.625µs
+Time to verify SNARKs: 42.646209ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Proving round 0
+Solving thread starting...
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.099024334s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 850.584µs
+Time to verify foldings: 2.407708ms
+Time to derandomize: 531.417µs
+Time to verify SNARKs: 42.264958ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.217354375s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 895.166µs
+Time to verify foldings: 2.448417ms
+Time to derandomize: 552.416µs
+Time to verify SNARKs: 44.3185ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.168483417s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 846.666µs
+Time to verify foldings: 2.425792ms
+Time to derandomize: 532.75µs
+Time to verify SNARKs: 43.862875ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.109205917s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 850.625µs
+Time to verify foldings: 2.424875ms
+Time to derandomize: 540.166µs
+Time to verify SNARKs: 40.43225ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.144885458s
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Time to verify hashes: 841.666µs
+Time to verify foldings: 2.449ms
+Time to derandomize: 538µs
+Time to verify SNARKs: 42.260375ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t3_coral.txt
+coral
+0
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.5862415s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 858.167µs
+Time to verify foldings: 2.477917ms
+Time to derandomize: 536.834µs
+Time to verify SNARKs: 41.685833ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.802107334s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 843.167µs
+Time to verify foldings: 2.4765ms
+Time to derandomize: 539.625µs
+Time to verify SNARKs: 44.87575ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.772802791s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 960.708µs
+Time to verify foldings: 2.450792ms
+Time to derandomize: 542.958µs
+Time to verify SNARKs: 50.543417ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.777009084s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 838.875µs
+Time to verify foldings: 2.41575ms
+Time to derandomize: 533µs
+Time to verify SNARKs: 42.908042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.770335666s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 853.5µs
+Time to verify foldings: 2.453416ms
+Time to derandomize: 531.5µs
+Time to verify SNARKs: 78.481042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.982582417s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 845.083µs
+Time to verify foldings: 2.420292ms
+Time to derandomize: 533.167µs
+Time to verify SNARKs: 42.58775ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.794913583s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 857.916µs
+Time to verify foldings: 2.448708ms
+Time to derandomize: 531.791µs
+Time to verify SNARKs: 43.825209ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.681383375s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 839.917µs
+Time to verify foldings: 2.414625ms
+Time to derandomize: 536.709µs
+Time to verify SNARKs: 42.732583ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Proving round 0
+Solving thread starting...
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.708201375s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 847.583µs
+Time to verify foldings: 2.442625ms
+Time to derandomize: 536.667µs
+Time to verify SNARKs: 41.921ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.893580667s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 856.084µs
+Time to verify foldings: 2.503458ms
+Time to derandomize: 533.5µs
+Time to verify SNARKs: 43.105584ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.940681125s
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Time to verify hashes: 837.041µs
+Time to verify foldings: 2.481834ms
+Time to derandomize: 536.875µs
+Time to verify SNARKs: 49.616125ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t2_coral.txt
+small
+0
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.257783833s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 843µs
+Time to verify foldings: 2.421625ms
+Time to derandomize: 529.167µs
+Time to verify SNARKs: 35.395042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.293743334s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 862.584µs
+Time to verify foldings: 2.569416ms
+Time to derandomize: 536.667µs
+Time to verify SNARKs: 35.678375ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.530407583s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 856.167µs
+Time to verify foldings: 2.509375ms
+Time to derandomize: 536.125µs
+Time to verify SNARKs: 35.448333ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.521868084s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 841.625µs
+Time to verify foldings: 2.427417ms
+Time to derandomize: 530µs
+Time to verify SNARKs: 32.491625ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.311489625s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 824.542µs
+Time to verify foldings: 2.432042ms
+Time to derandomize: 532.709µs
+Time to verify SNARKs: 34.4155ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.333485375s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 834.208µs
+Time to verify foldings: 2.414959ms
+Time to derandomize: 532.083µs
+Time to verify SNARKs: 37.204042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.22701375s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 841.291µs
+Time to verify foldings: 2.446833ms
+Time to derandomize: 532.125µs
+Time to verify SNARKs: 34.126042ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.300192208s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 847.25µs
+Time to verify foldings: 2.434ms
+Time to derandomize: 532.125µs
+Time to verify SNARKs: 33.139125ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.316672625s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 904.666µs
+Time to verify foldings: 2.54075ms
+Time to derandomize: 588.625µs
+Time to verify SNARKs: 42.084875ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.339605208s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 837µs
+Time to verify foldings: 2.417084ms
+Time to derandomize: 531.583µs
+Time to verify SNARKs: 30.567208ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.517388042s
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Time to verify hashes: 879.042µs
+Time to verify foldings: 2.475917ms
+Time to derandomize: 559.542µs
+Time to verify SNARKs: 42.286166ms
+Verified Successfully!
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps/toml_t1_coral.txt

@@ -1,9 +1,10 @@
-cargo clean 
-cargo build --release --features 'metrics para' 
+# cargo clean 
+# cargo build --release --features 'metrics para' 
 
 
 echo "c1" 
-declare -a b_c1=(29 33 38 44 52 65 87)
+declare -a b_c1=(87)
+#(29 33 38 44 52 65 87)
 for i in {0..10}
 do 
 echo "$i"
@@ -18,7 +19,8 @@ done
 done 
 
 echo "c2" 
-declare -a b_c2=(113 124 138 155 177)
+declare -a b_c2=(155)
+#(113 124 138 155 177)
 for i in {0..10}
 do 
 echo "$i"
@@ -34,7 +36,8 @@ done
 done 
 
 echo "c3" 
-declare -a b_c3=(242 272 311)
+declare -a b_c3=(242)
+#(242 272 311)
 for i in {0..10}
 do 
 echo "$i"
@@ -49,7 +52,8 @@ done
 done 
 
 echo "llvm" 
-declare -a b_llvm=(543 589 642 706 785)
+declare -a b_llvm=(543)
+# 589 642 706 785)
 for i in {0..10}
 do 
 echo "$i"

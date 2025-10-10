@@ -860,7 +860,7 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
         #[cfg(feature = "metrics")]
         {
             log::stop(Component::Solver, "ic");
-            log::tic(Component::Solver, "e2e_solving");
+            log::stop(Component::Solver, "e2e_solving");
         }
 
         let empty = self.clone().make_emtpy();

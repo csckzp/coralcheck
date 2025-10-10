@@ -113,7 +113,11 @@ pub fn setup<ArkF: ArkPrimeField>(
 
     let (ic_blinds, ram_hints, mut empty) = base.solve(grammar_graph, r0_consts)?;
 
+    #[cfg(feature = "metrics")]
+    log::tic(Component::Generator, "nova_pp_gen_p");
     let pp = gen_pp(&mut empty);
+    #[cfg(feature = "metrics")]
+    log::stop(Component::Generator, "nova_pp_gen_p");
 
     #[cfg(feature = "metrics")]
     log::tic(Component::Prover, "sample_random_layer");
@@ -156,7 +160,7 @@ pub fn make_coral_circuit<ArkF: ArkPrimeField>(
     #[cfg(feature = "metrics")]
     {
         log::tic(Component::Solver, format!("witness_synthesis_{}", i));
-        log::tic(Component::Solver, format!("witness_synthesis_ark_{}", i));
+        // log::tic(Component::Solver, format!("witness_synthesis_ark_{}", i));
     }
 
     let cs = ConstraintSystem::<ArkF>::new_ref();
@@ -190,10 +194,10 @@ pub fn make_coral_circuit<ArkF: ArkPrimeField>(
 
     irw.update(wires_res.unwrap());
 
-    #[cfg(feature = "metrics")]
-    {
-        log::stop(Component::Solver, format!("witness_synthesis_ark_{}", i));
-    }
+    // #[cfg(feature = "metrics")]
+    // {
+    //     log::stop(Component::Solver, format!("witness_synthesis_ark_{}", i));
+    // }
 
     let f = FCircuit::<N1>::new(cs.clone(), saved_matrix);
 

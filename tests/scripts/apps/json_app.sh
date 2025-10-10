@@ -4,7 +4,8 @@
 
 
 echo "citi" 
-declare -a b_citi=(575 611 652 698 752 814)
+declare -a b_citi=(611)
+    #575 611 652 698 752 814)
 for i in {0..10}
 do 
 echo "$i"
@@ -20,7 +21,8 @@ done
 done 
 
 echo "plaid" 
-declare -a b_plaid=(109 118 128 141 157 176 201)
+declare -a b_plaid=(141)
+    #109 118 128 141 157 176 201)
 for i in {0..10}
 do 
 echo "$i"
@@ -35,7 +37,8 @@ done
 done 
 
 echo "veratad" 
-declare -a b_dmv=(249 274 305)
+declare -a b_dmv=(305)
+    #249 274 305)
 for i in {0..10}
 do 
 echo "$i"
@@ -51,7 +54,8 @@ done
 done 
 
 echo "dk" 
-declare -a b_dk=(592 641 699 769 854)
+declare -a b_dk=(641)
+    #592 641 699 769 854)
 for i in {0..10}
 do 
 echo "$i"
@@ -81,7 +85,8 @@ done
 done 
 
 echo "jwt" 
-declare -a b_jwt=(109 118 128 141 157 176 201)
+declare -a b_jwt=(201)
+    #109 118 128 141 157 176 201)
 for i in {0..10}
 do 
 echo "$i"
