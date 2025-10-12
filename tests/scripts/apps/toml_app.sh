@@ -1,11 +1,10 @@
 
-# cargo clean 
-# cargo build --release --features 'metrics para' 
+cargo clean 
+cargo build --release --features 'metrics para' 
 
 
 echo "ark" 
-declare -a b_ark=(580)
-    #400 580 629 656 686 718 754 794 887)
+declare -a b_ark=(580 400 580 629 656 686 718 754 794 887)
 for i in {0..10}
 do 
 echo "$i"
@@ -21,8 +20,7 @@ done
 done 
 
 echo "coral" 
-declare -a b_coral=(554)
-    #459 492 532 554 604 665 738 782)
+declare -a b_coral=(554 459 492 532 554 604 665 738 782)
 for i in {0..10}
 do 
 echo "$i"
@@ -37,8 +35,7 @@ done
 done 
 
 echo "small" 
-declare -a b_small=(267)
-    #237 267 305 356 63 55 49 88 109)
+declare -a b_small=(267 237 267 305 356 63 55 49 88 109)
 for i in {0..10}
 do 
 echo "$i"

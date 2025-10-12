@@ -1,18 +1,41 @@
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.08
-	System time (seconds): 1.93
-	Percent of CPU this job got: 746%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.04
+	User time (seconds): 72.08
+	System time (seconds): 2.31
+	Percent of CPU this job got: 702%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.59
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2007200
+	Maximum resident set size (kbytes): 2080928
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 275994
-	Voluntary context switches: 3
-	Involuntary context switches: 107552
+	Minor (reclaiming a frame) page faults: 285955
+	Voluntary context switches: 2
+	Involuntary context switches: 187675
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
+	User time (seconds): 72.86
+	System time (seconds): 2.41
+	Percent of CPU this job got: 703%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2078960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 285586
+	Voluntary context switches: 2
+	Involuntary context switches: 210483
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -23,19 +46,19 @@
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
 	User time (seconds): 73.15
-	System time (seconds): 1.91
-	Percent of CPU this job got: 752%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.97
+	System time (seconds): 2.67
+	Percent of CPU this job got: 645%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.74
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2008688
+	Maximum resident set size (kbytes): 1720544
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 271932
+	Minor (reclaiming a frame) page faults: 319489
 	Voluntary context switches: 3
-	Involuntary context switches: 102489
+	Involuntary context switches: 268011
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -45,66 +68,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.16
-	System time (seconds): 2.02
-	Percent of CPU this job got: 750%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.01
+	User time (seconds): 72.37
+	System time (seconds): 2.37
+	Percent of CPU this job got: 692%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.79
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2055360
+	Maximum resident set size (kbytes): 1982144
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 283763
-	Voluntary context switches: 1
-	Involuntary context switches: 109707
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.29
-	System time (seconds): 1.90
-	Percent of CPU this job got: 752%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.98
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2018224
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 286727
-	Voluntary context switches: 2
-	Involuntary context switches: 105807
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.21
-	System time (seconds): 2.03
-	Percent of CPU this job got: 752%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.99
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2041872
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 286993
+	Minor (reclaiming a frame) page faults: 294822
 	Voluntary context switches: 3
-	Involuntary context switches: 110381
+	Involuntary context switches: 196758
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -114,20 +91,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.44
-	System time (seconds): 1.99
-	Percent of CPU this job got: 757%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.95
+	User time (seconds): 75.28
+	System time (seconds): 3.06
+	Percent of CPU this job got: 612%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.80
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2007040
+	Maximum resident set size (kbytes): 1626112
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 284361
-	Voluntary context switches: 2
-	Involuntary context switches: 108800
+	Minor (reclaiming a frame) page faults: 332634
+	Voluntary context switches: 7
+	Involuntary context switches: 330665
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -137,20 +114,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.82
-	System time (seconds): 1.99
-	Percent of CPU this job got: 766%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.89
+	User time (seconds): 77.24
+	System time (seconds): 2.99
+	Percent of CPU this job got: 654%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.25
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2006480
+	Maximum resident set size (kbytes): 1686688
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 283098
-	Voluntary context switches: 2
-	Involuntary context switches: 102400
+	Minor (reclaiming a frame) page faults: 318282
+	Voluntary context switches: 3
+	Involuntary context switches: 319161
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -160,20 +137,43 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.59
-	System time (seconds): 2.10
-	Percent of CPU this job got: 748%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.11
+	User time (seconds): 77.24
+	System time (seconds): 2.89
+	Percent of CPU this job got: 650%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.31
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2013520
+	Maximum resident set size (kbytes): 1615232
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 284026
+	Minor (reclaiming a frame) page faults: 320454
+	Voluntary context switches: 3
+	Involuntary context switches: 301726
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
+	User time (seconds): 76.59
+	System time (seconds): 2.65
+	Percent of CPU this job got: 657%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2074080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 282950
 	Voluntary context switches: 1
-	Involuntary context switches: 117340
+	Involuntary context switches: 258131
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -183,20 +183,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.19
-	System time (seconds): 2.05
-	Percent of CPU this job got: 750%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.03
+	User time (seconds): 77.52
+	System time (seconds): 2.95
+	Percent of CPU this job got: 631%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.74
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2083888
+	Maximum resident set size (kbytes): 1713408
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 286151
+	Minor (reclaiming a frame) page faults: 318108
 	Voluntary context switches: 1
-	Involuntary context switches: 119771
+	Involuntary context switches: 318864
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -206,20 +206,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.47
-	System time (seconds): 1.95
-	Percent of CPU this job got: 757%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.95
+	User time (seconds): 77.20
+	System time (seconds): 2.97
+	Percent of CPU this job got: 690%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.60
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2076048
+	Maximum resident set size (kbytes): 1785536
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 280249
+	Minor (reclaiming a frame) page faults: 321068
 	Voluntary context switches: 1
-	Involuntary context switches: 95632
+	Involuntary context switches: 252601
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -229,273 +229,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.37
-	System time (seconds): 1.95
-	Percent of CPU this job got: 754%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.97
+	User time (seconds): 79.45
+	System time (seconds): 3.35
+	Percent of CPU this job got: 659%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.55
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2064400
+	Maximum resident set size (kbytes): 1574384
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 286467
-	Voluntary context switches: 1
-	Involuntary context switches: 94304
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.39
-	System time (seconds): 1.99
-	Percent of CPU this job got: 757%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.94
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2026304
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 285440
-	Voluntary context switches: 0
-	Involuntary context switches: 109895
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.99
-	System time (seconds): 2.11
-	Percent of CPU this job got: 744%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.22
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2023520
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 282921
+	Major (requiring I/O) page faults: 117
+	Minor (reclaiming a frame) page faults: 318523
 	Voluntary context switches: 2
-	Involuntary context switches: 141502
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.52
-	System time (seconds): 2.10
-	Percent of CPU this job got: 744%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.15
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 1989904
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 283458
-	Voluntary context switches: 2
-	Involuntary context switches: 139062
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.79
-	System time (seconds): 2.09
-	Percent of CPU this job got: 747%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.15
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2071744
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 287752
-	Voluntary context switches: 2
-	Involuntary context switches: 140861
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.45
-	System time (seconds): 2.07
-	Percent of CPU this job got: 747%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.10
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2034864
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 285320
-	Voluntary context switches: 2
-	Involuntary context switches: 136612
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.17
-	System time (seconds): 2.28
-	Percent of CPU this job got: 716%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.52
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2057024
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 288016
-	Voluntary context switches: 4
-	Involuntary context switches: 175560
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 72.88
-	System time (seconds): 2.07
-	Percent of CPU this job got: 736%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.17
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2070720
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 293077
-	Voluntary context switches: 2
-	Involuntary context switches: 131379
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.62
-	System time (seconds): 1.99
-	Percent of CPU this job got: 753%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.04
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2051504
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 286912
-	Voluntary context switches: 2
-	Involuntary context switches: 120881
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.01
-	System time (seconds): 1.99
-	Percent of CPU this job got: 744%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.07
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2032944
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 277961
-	Voluntary context switches: 2
-	Involuntary context switches: 116650
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.72
-	System time (seconds): 2.12
-	Percent of CPU this job got: 734%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.33
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 2010224
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 275841
-	Voluntary context switches: 2
-	Involuntary context switches: 162627
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/toml/t2.txt -g ./grammars/toml.pest -b 554 -m ./tests/results/timings/apps/toml_t2_coral.txt --prove"
-	User time (seconds): 73.75
-	System time (seconds): 2.05
-	Percent of CPU this job got: 732%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.34
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 1959968
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 268210
-	Voluntary context switches: 2
-	Involuntary context switches: 149534
+	Involuntary context switches: 340620
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

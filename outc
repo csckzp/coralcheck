@@ -1,7 +1,736 @@
+     Removed 3130 files, 756.4MiB total
+   Compiling proc-macro2 v1.0.101
+   Compiling quote v1.0.41
+   Compiling unicode-ident v1.0.19
+   Compiling autocfg v1.5.0
+   Compiling libc v0.2.176
+   Compiling cfg-if v1.0.3
+   Compiling serde_core v1.0.228
+   Compiling serde v1.0.228
+   Compiling version_check v0.9.5
+   Compiling typenum v1.19.0
+   Compiling subtle v2.6.1
+   Compiling crossbeam-utils v0.8.21
+   Compiling zerocopy v0.8.27
+   Compiling libm v0.2.15
+   Compiling once_cell v1.21.3
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling rayon-core v1.13.0
+   Compiling either v1.15.0
+   Compiling crossbeam-epoch v0.9.18
+   Compiling ident_case v1.0.1
+   Compiling fnv v1.0.7
+   Compiling strsim v0.11.1
+   Compiling syn v2.0.106
+   Compiling crossbeam-deque v0.8.6
+   Compiling syn v1.0.109
+   Compiling arrayvec v0.7.6
+   Compiling paste v1.0.15
+   Compiling allocator-api2 v0.2.21
+   Compiling getrandom v0.2.16
+   Compiling rand_core v0.6.4
+   Compiling num-bigint v0.3.3
+   Compiling spin v0.9.8
+   Compiling base64 v0.22.1
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling digest v0.10.7
+   Compiling lazy_static v1.5.0
+   Compiling tracing-core v0.1.34
+   Compiling num-integer v0.1.46
+   Compiling ahash v0.8.12
+   Compiling byteorder v1.5.0
+   Compiling rayon v1.11.0
+   Compiling num-bigint v0.4.6
+   Compiling radium v0.7.0
+   Compiling itertools v0.13.0
+   Compiling smallvec v1.15.1
+   Compiling tap v1.0.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling wyz v0.5.1
+   Compiling hashbrown v0.15.5
+   Compiling rand_chacha v0.3.1
+   Compiling log v0.4.28
+   Compiling funty v2.0.0
+   Compiling cpufeatures v0.2.17
+   Compiling rand v0.8.5
+   Compiling addchain v0.2.0
+   Compiling darling_core v0.21.3
+   Compiling bitvec v1.0.1
+   Compiling memchr v2.7.6
+   Compiling sharded-slab v0.1.7
+   Compiling thread_local v1.1.9
+   Compiling hashbrown v0.16.0
+   Compiling pin-project-lite v0.2.16
+   Compiling equivalent v1.0.2
+   Compiling tracing-log v0.2.0
+   Compiling nu-ansi-term v0.50.1
+   Compiling keccak v0.1.5
+   Compiling constant_time_eq v0.3.1
+   Compiling ark-std v0.5.0
+   Compiling indexmap v2.11.4
+   Compiling tracing-subscriber v0.3.20
+   Compiling arrayref v0.3.9
+   Compiling foldhash v0.1.5
+   Compiling sha2 v0.10.9
+   Compiling blake2 v0.10.6
+   Compiling thiserror v1.0.69
+   Compiling itoa v1.0.15
+   Compiling ryu v1.0.20
+   Compiling hashbrown v0.14.5
+   Compiling regex-syntax v0.8.6
+   Compiling parking_lot_core v0.9.12
+   Compiling serde_derive v1.0.228
+   Compiling enum-ordinalize-derive v4.3.1
+   Compiling zeroize_derive v1.4.2
+   Compiling ark-serialize-derive v0.5.0 (https://github.com/arkworks-rs/algebra/#c6f9284c)
+   Compiling ark-ff-macros v0.5.0
+   Compiling ark-ff-asm v0.5.0
+   Compiling enum-ordinalize v4.3.0
+   Compiling tracing-attributes v0.1.30
+   Compiling zeroize v1.8.2
+   Compiling thiserror-impl v1.0.69
+   Compiling educe v0.6.0
+   Compiling core-foundation-sys v0.8.7
+   Compiling darling_macro v0.21.3
+   Compiling ff_derive v0.13.1
+   Compiling thiserror v2.0.17
+   Compiling ucd-trie v0.1.7
+   Compiling halo2curves v0.8.0
+   Compiling regex-syntax v0.6.29
+   Compiling static_assertions v1.1.0
+   Compiling darling v0.21.3
+   Compiling utf8parse v0.2.2
+   Compiling serde_json v1.0.145
+   Compiling anstyle-parse v0.2.7
+   Compiling pest v2.8.3
+   Compiling serde_with_macros v3.15.0
+   Compiling regex-automata v0.4.11
+   Compiling tracing v0.1.41
+   Compiling ff v0.13.1
+   Compiling iana-time-zone v0.1.64
+   Compiling unroll v0.1.5
+   Compiling group v0.13.0
+   Compiling halo2derive v0.1.0
+   Compiling thiserror-impl v2.0.17
+   Compiling pairing v0.23.0
+   Compiling blake2s_simd v1.0.3
+   Compiling serde_with v3.15.0
+   Compiling itertools v0.14.0
+   Compiling regex-automata v0.1.10
+   Compiling scopeguard v1.2.0
+   Compiling anstyle-query v1.1.4
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling colorchoice v1.0.4
+   Compiling anstyle v1.0.13
+   Compiling lock_api v0.4.14
+   Compiling anstream v0.6.21
+   Compiling pest_meta v2.8.3
+   Compiling hex v0.4.3
+   Compiling serde-encoded-bytes v0.2.1
+   Compiling serde_arrays v0.1.0
+   Compiling matchers v0.0.1
+   Compiling regex v1.11.3
+   Compiling bincode v1.3.3
+   Compiling bellpepper-core v0.4.0
+   Compiling tracing-serde v0.1.3
+   Compiling chrono v0.4.42
+   Compiling merlin v3.0.0
+   Compiling derivative v2.2.0
+   Compiling ark-crypto-primitives-macros v0.5.0
+   Compiling blake2b_simd v1.0.3
+   Compiling ark-serialize v0.5.0 (https://github.com/arkworks-rs/algebra/#c6f9284c)
+   Compiling sha3 v0.10.8
+   Compiling csv-core v0.1.12
+   Compiling ark-ff v0.5.0
+   Compiling tracing-log v0.1.4
+   Compiling generic-array v1.2.0
+   Compiling clap_lex v0.7.5
+   Compiling ansi_term v0.12.1
+   Compiling heck v0.5.0
+   Compiling anyhow v1.0.100
+   Compiling clap_builder v4.5.48
+   Compiling clap_derive v4.5.47
+   Compiling tracing-subscriber v0.2.25
+   Compiling csv v1.3.1
+   Compiling pasta_curves v0.5.1
+   Compiling bellpepper v0.4.1
+   Compiling dashmap v6.1.0
+   Compiling pest_generator v2.8.3
+   Compiling fixedbitset v0.4.2
+   Compiling rustc-hash v2.1.1
+   Compiling metrics v0.1.0 (/Users/elizabethmargolin/Desktop/coral/metrics)
+   Compiling clap v4.5.48
+   Compiling pest_vm v2.8.3
+   Compiling pest_derive v2.8.3
+   Compiling petgraph v0.6.5
+   Compiling memory-stats v1.2.0
+   Compiling ark-poly v0.5.0
+   Compiling nova-snark v0.41.0 (https://github.com/jkwoods/Nova#fc87312f)
+   Compiling ark-ec v0.5.0
+   Compiling ark-relations v0.5.1 (https://github.com/arkworks-rs/snark/#845ce9d5)
+   Compiling ark-snark v0.5.1 (https://github.com/arkworks-rs/snark/#845ce9d5)
+   Compiling ark-bn254 v0.5.0
+   Compiling ark-grumpkin v0.5.0
+   Compiling ark-r1cs-std v0.5.0 (https://github.com/arkworks-rs/r1cs-std#3b12258d)
+   Compiling ark-crypto-primitives v0.5.0
+   Compiling ark-poly-commit v0.5.0
+   Compiling segmented_circuit_memory v0.1.0 (https://github.com/eniac/segmented-memory#549b1d76)
+   Compiling coral v0.1.0 (/Users/elizabethmargolin/Desktop/coral)
+warning: unused import: `log::Component`
+  --> src/util.rs:22:29
+   |
+22 | use metrics::metrics::{log, log::Component};
+   |                             ^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+warning: `coral` (lib) generated 1 warning (run `cargo fix --lib -p coral` to apply 1 suggestion)
+warning: value assigned to `opt_grammar_graph` is never read
+  --> src/main.rs:26:13
+   |
+26 |     let mut opt_grammar_graph: Option<GrammarGraph> = None;
+   |             ^^^^^^^^^^^^^^^^^
+   |
+   = help: maybe it is overwritten before being read?
+   = note: `#[warn(unused_assignments)]` on by default
+
+warning: value assigned to `opt_doc` is never read
+  --> src/main.rs:27:13
+   |
+27 |     let mut opt_doc: Option<Vec<char>> = None;
+   |             ^^^^^^^
+   |
+   = help: maybe it is overwritten before being read?
+
+warning: `coral` (bin "coral") generated 2 warnings
+    Finished `release` profile [optimized] target(s) in 48.20s
+c1
+0
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.58861175s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.610010959s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.602064625s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.615226958s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.562256s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.588290459s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.552427625s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.535676708s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.574829709s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.564991625s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Compressed
+Proving time: 1.5678015s
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c1_coral.txt
+c2
+0
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.314095292s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.350995042s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.349872708s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.345075417s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.2949165s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.296862958s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.457275625s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.368943916s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.368960209s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.556790041s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.461254083s
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c2_coral.txt
+c3
+0
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.911566458s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+1
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.91479525s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+2
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.899847917s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+3
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.849326833s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+4
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.816048708s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+5
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.9253325s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.841158167s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.902252833s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.831211792s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 2.864179s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Compressed
+Proving time: 3.188259459s
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/c_c3_coral.txt
 llvm
 0
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -17,19 +746,13 @@ Proving round 10
 Proving round 11
 Proving round 12
 Compressed
-Proving time: 5.705753792s
-Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
-Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
-Time to verify hashes: 827.583µs
-Time to verify foldings: 2.446375ms
-Time to derandomize: 540.833µs
-Time to verify SNARKs: 61.4565ms
-Verified Successfully!
+Proving time: 5.910151417s
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
 1
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -45,13 +768,6 @@ Proving round 10
 Proving round 11
 Proving round 12
 Compressed
-Proving time: 5.209307625s
-Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
-Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
-Time to verify hashes: 842.042µs
-Time to verify foldings: 2.419708ms
-Time to derandomize: 535.5µs
-Time to verify SNARKs: 63.116584ms
-Verified Successfully!
+Proving time: 5.845411459s
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/c_llvm_coral.txt

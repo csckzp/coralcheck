@@ -128,11 +128,11 @@ pub fn setup<ArkF: ArkPrimeField>(
     log::stop(Component::Prover, "sample_random_layer");
 
     #[cfg(feature = "metrics")]
-    log::tic(Component::Prover, "snark_params");
+    log::tic(Component::Prover, "snark_params_p");
     let (pk, _) = CompressedSNARK::<_, _, _, S1, S2>::setup(&pp).unwrap();
 
     #[cfg(feature = "metrics")]
-    log::stop(Component::Prover, "snark_params");
+    log::stop(Component::Prover, "snark_params_p");
 
     let p_i = ProverInfo {
         ic_key_lengths: base.key_lengths.clone(),
@@ -342,6 +342,7 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
     {
         log::stop(Component::Prover, "constraint_gen");
         log::r1cs(Component::Prover, "Num Constraints", pp.num_constraints().0);
+        // println!( "Num Constraints Secondary {:?}", pp.num_constraints().1);
         log::tic(Component::Prover, "prove_e2e");
     }
 

@@ -40,11 +40,11 @@ pub fn setup(empty_circuit: &mut CoralStepCircuit<AF>) -> VerifierInfo<AF> {
     log::stop(Component::Generator, "nova_pp_gen_v");
 
     #[cfg(feature = "metrics")]
-    log::tic(Component::Verifier, "snark_params");
+    log::tic(Component::Verifier, "snark_params_v");
     let (_, vk) = CompressedSNARK::<_, _, _, S1, S2>::setup(&pp).unwrap();
 
     #[cfg(feature = "metrics")]
-    log::stop(Component::Verifier, "snark_params");
+    log::stop(Component::Verifier, "snark_params_v");
 
     VerifierInfo {
         tree_size: empty_circuit.tree_size_usize,

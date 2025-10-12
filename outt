@@ -2,6 +2,7 @@ ark
 0
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -29,12 +30,13 @@ Proving round 22
 Proving round 23
 Proving round 24
 Compressed
-Proving time: 7.619659375s
+Proving time: 7.917486583s
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 1
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -62,12 +64,13 @@ Proving round 22
 Proving round 23
 Proving round 24
 Compressed
-Proving time: 7.567786042s
+Proving time: 7.606471959s
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 2
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -95,12 +98,13 @@ Proving round 22
 Proving round 23
 Proving round 24
 Compressed
-Proving time: 7.520593833s
+Proving time: 7.7493135s
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 3
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -128,12 +132,13 @@ Proving round 22
 Proving round 23
 Proving round 24
 Compressed
-Proving time: 8.110130625s
+Proving time: 7.40201775s
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 4
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -161,12 +166,13 @@ Proving round 22
 Proving round 23
 Proving round 24
 Compressed
-Proving time: 7.972651s
+Proving time: 7.444886166s
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 5
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -194,13 +200,184 @@ Proving round 22
 Proving round 23
 Proving round 24
 Compressed
-Proving time: 7.890895417s
+Proving time: 7.456353041s
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.440309666s
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.402794291s
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.572819875s
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.43719175s
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Proving round 24
+Compressed
+Proving time: 7.737085708s
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t3_coral.txt
 coral
 0
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -227,12 +404,13 @@ Proving round 21
 Proving round 22
 Proving round 23
 Compressed
-Proving time: 8.465151625s
+Proving time: 7.257701583s
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 1
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -259,12 +437,13 @@ Proving round 21
 Proving round 22
 Proving round 23
 Compressed
-Proving time: 7.262507375s
+Proving time: 7.496170875s
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 2
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -291,12 +470,13 @@ Proving round 21
 Proving round 22
 Proving round 23
 Compressed
-Proving time: 7.407205083s
+Proving time: 7.073550875s
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 3
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -323,12 +503,13 @@ Proving round 21
 Proving round 22
 Proving round 23
 Compressed
-Proving time: 7.495447166s
+Proving time: 7.065665791s
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 4
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -355,12 +536,13 @@ Proving round 21
 Proving round 22
 Proving round 23
 Compressed
-Proving time: 7.443545209s
+Proving time: 6.9386975s
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 5
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -387,13 +569,179 @@ Proving round 21
 Proving round 22
 Proving round 23
 Compressed
-Proving time: 7.45558175s
+Proving time: 7.008769667s
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 7.214019458s
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 7.040743333s
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.891738875s
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 6.977952666s
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Proving round 8
+Proving round 9
+Proving round 10
+Proving round 11
+Proving round 12
+Proving round 13
+Proving round 14
+Proving round 15
+Proving round 16
+Proving round 17
+Proving round 18
+Proving round 19
+Proving round 20
+Proving round 21
+Proving round 22
+Proving round 23
+Compressed
+Proving time: 7.236016583s
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t2_coral.txt
 small
 0
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -404,12 +752,13 @@ Proving round 5
 Proving round 6
 Proving round 7
 Compressed
-Proving time: 2.851021958s
+Proving time: 2.619098625s
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 1
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -420,12 +769,13 @@ Proving round 5
 Proving round 6
 Proving round 7
 Compressed
-Proving time: 2.811849208s
+Proving time: 2.663240667s
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 2
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -436,12 +786,13 @@ Proving round 5
 Proving round 6
 Proving round 7
 Compressed
-Proving time: 2.632164667s
+Proving time: 2.676073167s
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 3
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -452,12 +803,13 @@ Proving round 5
 Proving round 6
 Proving round 7
 Compressed
-Proving time: 2.720659833s
+Proving time: 2.702654834s
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 4
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -468,12 +820,13 @@ Proving round 5
 Proving round 6
 Proving round 7
 Compressed
-Proving time: 2.711817125s
+Proving time: 2.62409825s
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 5
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
 Solving thread starting...
 Proving round 0
 Proving round 1
@@ -484,6 +837,91 @@ Proving round 5
 Proving round 6
 Proving round 7
 Compressed
-Proving time: 2.68683225s
+Proving time: 2.639271458s
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+6
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.603702958s
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+7
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.653585333s
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+8
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.6566665s
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+9
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.633944917s
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+10
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
+Num Constraints Secondary 16836
+Solving thread starting...
+Proving round 0
+Proving round 1
+Proving round 2
+Proving round 3
+Proving round 4
+Proving round 5
+Proving round 6
+Proving round 7
+Compressed
+Proving time: 2.656538583s
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt
 Writing timer data to ./tests/results/timings/apps_re/toml_t1_coral.txt

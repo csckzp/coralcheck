@@ -1,18 +1,18 @@
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.93
-	System time (seconds): 0.66
-	Percent of CPU this job got: 698%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.80
+	User time (seconds): 26.20
+	System time (seconds): 0.60
+	Percent of CPU this job got: 709%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.77
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 795984
+	Maximum resident set size (kbytes): 800048
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 64041
-	Voluntary context switches: 0
-	Involuntary context switches: 35594
+	Minor (reclaiming a frame) page faults: 64694
+	Voluntary context switches: 3
+	Involuntary context switches: 31939
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -22,20 +22,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.75
-	System time (seconds): 0.67
-	Percent of CPU this job got: 694%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.80
+	User time (seconds): 26.14
+	System time (seconds): 0.58
+	Percent of CPU this job got: 711%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.75
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 777776
+	Maximum resident set size (kbytes): 787744
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 62542
-	Voluntary context switches: 0
-	Involuntary context switches: 42973
+	Minor (reclaiming a frame) page faults: 63499
+	Voluntary context switches: 1
+	Involuntary context switches: 29048
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -45,56 +45,10 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.81
-	System time (seconds): 0.66
-	Percent of CPU this job got: 699%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.78
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 789600
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 63834
-	Voluntary context switches: 0
-	Involuntary context switches: 35834
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.67
-	System time (seconds): 0.74
-	Percent of CPU this job got: 678%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.89
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 754752
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 60959
-	Voluntary context switches: 0
-	Involuntary context switches: 44165
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 16384
-	Exit status: 0
-	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.91
-	System time (seconds): 0.72
-	Percent of CPU this job got: 685%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.88
+	User time (seconds): 26.16
+	System time (seconds): 0.56
+	Percent of CPU this job got: 714%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.74
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
@@ -102,9 +56,9 @@
 	Maximum resident set size (kbytes): 793216
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 63822
+	Minor (reclaiming a frame) page faults: 64115
 	Voluntary context switches: 0
-	Involuntary context switches: 42665
+	Involuntary context switches: 29185
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -114,20 +68,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.94
-	System time (seconds): 0.77
-	Percent of CPU this job got: 688%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.87
+	User time (seconds): 26.07
+	System time (seconds): 0.58
+	Percent of CPU this job got: 707%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.77
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 794208
+	Maximum resident set size (kbytes): 791840
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 64150
+	Minor (reclaiming a frame) page faults: 64170
 	Voluntary context switches: 0
-	Involuntary context switches: 47658
+	Involuntary context switches: 31570
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -137,20 +91,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.79
-	System time (seconds): 0.72
-	Percent of CPU this job got: 690%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.84
+	User time (seconds): 26.20
+	System time (seconds): 0.53
+	Percent of CPU this job got: 715%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.74
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 791760
+	Maximum resident set size (kbytes): 792000
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 64106
+	Minor (reclaiming a frame) page faults: 64103
 	Voluntary context switches: 0
-	Involuntary context switches: 38285
+	Involuntary context switches: 26347
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -160,20 +114,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.84
-	System time (seconds): 0.69
-	Percent of CPU this job got: 693%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.82
+	User time (seconds): 26.17
+	System time (seconds): 0.55
+	Percent of CPU this job got: 712%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.75
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 782464
+	Maximum resident set size (kbytes): 787952
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 62973
+	Minor (reclaiming a frame) page faults: 63934
 	Voluntary context switches: 0
-	Involuntary context switches: 35968
+	Involuntary context switches: 27684
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -183,20 +137,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.70
-	System time (seconds): 0.72
-	Percent of CPU this job got: 695%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.80
+	User time (seconds): 26.10
+	System time (seconds): 0.55
+	Percent of CPU this job got: 716%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.72
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 781088
+	Maximum resident set size (kbytes): 805392
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 63039
+	Minor (reclaiming a frame) page faults: 64861
 	Voluntary context switches: 0
-	Involuntary context switches: 39969
+	Involuntary context switches: 26596
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -206,20 +160,20 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.97
-	System time (seconds): 0.72
-	Percent of CPU this job got: 691%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.85
+	User time (seconds): 26.20
+	System time (seconds): 0.60
+	Percent of CPU this job got: 716%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.74
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 785024
+	Maximum resident set size (kbytes): 787264
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 63023
+	Minor (reclaiming a frame) page faults: 63623
 	Voluntary context switches: 0
-	Involuntary context switches: 48006
+	Involuntary context switches: 27770
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -229,20 +183,66 @@
 	Page size (bytes): 16384
 	Exit status: 0
 	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
-	User time (seconds): 25.77
-	System time (seconds): 0.82
-	Percent of CPU this job got: 669%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.97
+	User time (seconds): 26.26
+	System time (seconds): 0.61
+	Percent of CPU this job got: 711%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.77
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 792912
+	Maximum resident set size (kbytes): 802688
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 63328
+	Minor (reclaiming a frame) page faults: 64369
 	Voluntary context switches: 0
-	Involuntary context switches: 61083
+	Involuntary context switches: 29992
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
+	User time (seconds): 26.08
+	System time (seconds): 0.57
+	Percent of CPU this job got: 713%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 798720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 64249
+	Voluntary context switches: 0
+	Involuntary context switches: 27294
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/jwt.txt -g ./grammars/json.pest -b 201 -m ./tests/results/timings/apps/json_jwt_coral.txt --prove"
+	User time (seconds): 26.10
+	System time (seconds): 0.55
+	Percent of CPU this job got: 713%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 760400
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 61429
+	Voluntary context switches: 0
+	Involuntary context switches: 27171
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
