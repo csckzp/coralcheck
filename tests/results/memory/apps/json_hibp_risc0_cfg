@@ -1,18 +1,18 @@
-	Command being timed: "./target/release/validate_input ../../tests/test_docs/json/hibp.txt ../../grammars/json.pest ../../tests/results/timings/json_hibp_risc0_cfg.txt"
-	User time (seconds): 68552.18
-	System time (seconds): 126.46
-	Percent of CPU this job got: 1148%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:39:38
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/json/hibp_small.txt ../../grammars/json.pest ../../tests/results/timings/json_hibp_small_risc0_cfg.txt"
+	User time (seconds): 5231.64
+	System time (seconds): 9.71
+	Percent of CPU this job got: 1150%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:35.60
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 9764416
+	Maximum resident set size (kbytes): 9562960
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 2
-	Minor (reclaiming a frame) page faults: 47521642
-	Voluntary context switches: 233
-	Involuntary context switches: 12128935
+	Minor (reclaiming a frame) page faults: 3678024
+	Voluntary context switches: 18
+	Involuntary context switches: 924572
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0
@@ -21,21 +21,21 @@
 	Signals delivered: 0
 	Page size (bytes): 16384
 	Exit status: 0
-	Command being timed: "./target/release/validate_input ../../tests/test_docs/json/hibp.txt ../../grammars/json.pest ../../tests/results/timings/json_hibp_risc0_cfg.txt"
-	User time (seconds): 68250.48
-	System time (seconds): 123.28
-	Percent of CPU this job got: 1153%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:38:48
+	Command being timed: "./target/release/validate_input ../../tests/test_docs/json/hibp_small.txt ../../grammars/json.pest ../../tests/results/timings/json_hibp_small_risc0_cfg.txt"
+	User time (seconds): 5216.29
+	System time (seconds): 9.37
+	Percent of CPU this job got: 1152%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:33.40
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 9786096
+	Maximum resident set size (kbytes): 9567344
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 2
-	Minor (reclaiming a frame) page faults: 47300666
-	Voluntary context switches: 253
-	Involuntary context switches: 11918916
+	Minor (reclaiming a frame) page faults: 3678073
+	Voluntary context switches: 11
+	Involuntary context switches: 906967
 	Swaps: 0
 	File system inputs: 0
 	File system outputs: 0

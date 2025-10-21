@@ -7,6 +7,7 @@ use nova_snark::nova::CompressedSNARK;
 use nova_snark::{
     errors::NovaError,
     nova::{PublicParams, VerifierKey},
+    traits::ROConstants,
 };
 use segmented_circuit_memory::memory::nebula::RunningMem;
 
@@ -22,6 +23,7 @@ pub struct VerifierInfo<ArkF: arkPrimeField> {
     pub mem: RunningMem<AF>,
     pub snark_vk: VerifierKey<E1, E2, C1, S1, S2>,
     pub perm_chal: Vec<ArkF>,
+    pub r0_consts: ROConstants<E1>
 }
 
 #[derive(CanonicalSerialize, CanonicalDeserialize, Debug)]
@@ -31,14 +33,18 @@ pub struct VerifierDocCommit {
 }
 
 pub fn setup(empty_circuit: &mut CoralStepCircuit<AF>) -> VerifierInfo<AF> {
+    #[cfg(feature = "metrics")]
+    log::tic(Component::Generator, "nova_pp_gen_v");
     let pp = gen_pp(empty_circuit);
+    #[cfg(feature = "metrics")]
+    log::stop(Component::Generator, "nova_pp_gen_v");
 
     #[cfg(feature = "metrics")]
-    log::tic(Component::Verifier, "snark_params");
+    log::tic(Component::Verifier, "snark_params_v");
     let (_, vk) = CompressedSNARK::<_, _, _, S1, S2>::setup(&pp).unwrap();
 
     #[cfg(feature = "metrics")]
-    log::stop(Component::Verifier, "snark_params");
+    log::stop(Component::Verifier, "snark_params_v");
 
     VerifierInfo {
         tree_size: empty_circuit.tree_size_usize,
@@ -47,6 +53,7 @@ pub fn setup(empty_circuit: &mut CoralStepCircuit<AF>) -> VerifierInfo<AF> {
         mem: empty_circuit.mem.clone().unwrap(),
         snark_vk: vk,
         perm_chal: empty_circuit.mem.as_ref().unwrap().perm_chal.clone(),
+        r0_consts: ROConstants::<E1>::default()
     }
 }
 
@@ -75,7 +82,7 @@ pub fn verify(
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "eq_checks");
     
-    v_i.mem.verifier_checks(&zn, &ci);
+    v_i.mem.verifier_checks(&zn, &ci, v_i.r0_consts);
     #[cfg(feature = "metrics")]
     {
         log::stop(Component::Verifier, "eq_checks");

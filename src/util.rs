@@ -115,8 +115,6 @@ pub fn read_graph(pest_file: String, input: String) -> (GrammarGraph, Vec<char>)
 }
 
 pub fn gen_pp<AF: ArkPrimeField>(empty_csc: &mut CoralStepCircuit<AF>) -> PublicParams<E1, E2, C1> {
-    #[cfg(feature = "metrics")]
-    log::tic(Component::Generator, "nova_pp_gen");
     let mut irw = InterRoundWires::new();
 
     let mut circuit_primary = make_coral_circuit(empty_csc, &mut irw, 0, None);
@@ -125,12 +123,10 @@ pub fn gen_pp<AF: ArkPrimeField>(empty_csc: &mut CoralStepCircuit<AF>) -> Public
         &mut circuit_primary,
         &*default_ck_hint(),
         &*default_ck_hint(),
-        vec![empty_csc.key_length],
+        empty_csc.key_lengths.clone(),
         Some("./ppot_0080_23.ptau"),
     )
     .unwrap();
-    #[cfg(feature = "metrics")]
-    log::stop(Component::Generator, "nova_pp_gen");
     pp
 }
 

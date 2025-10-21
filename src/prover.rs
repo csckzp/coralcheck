@@ -10,6 +10,7 @@ use nova_snark::{
     errors::NovaError,
     frontend::LinearCombination,
     nova::{CompressedSNARK, ProverKey, PublicParams, RandomLayer, RecursiveSNARK},
+    traits::ROConstants,
 };
 use rand::rngs::OsRng;
 use segmented_circuit_memory::bellpepper::FCircuit;
@@ -28,7 +29,7 @@ use std::{
 use metrics::metrics::{log, log::Component};
 
 pub struct ProverInfo {
-    pub ic_key_length: usize,
+    pub ic_key_lengths: Vec<usize>,
     pub ic_blinds: Vec<Vec<N1>>,
     pub ic_hints: Vec<Vec<N1>>,
     pub snark_pk: ProverKey<E1, E2, C1, S1, S2>,
@@ -108,9 +109,15 @@ pub fn setup<ArkF: ArkPrimeField>(
 > {
     let mut base = CoralStepCircuit::new(grammar_graph, batch_size, doc_blind);
 
-    let (ic_blinds, ram_hints, mut empty) = base.solve(grammar_graph)?;
+    let r0_consts = ROConstants::<E1>::default();
 
+    let (ic_blinds, ram_hints, mut empty) = base.solve(grammar_graph, r0_consts)?;
+
+    #[cfg(feature = "metrics")]
+    log::tic(Component::Generator, "nova_pp_gen_p");
     let pp = gen_pp(&mut empty);
+    #[cfg(feature = "metrics")]
+    log::stop(Component::Generator, "nova_pp_gen_p");
 
     #[cfg(feature = "metrics")]
     log::tic(Component::Prover, "sample_random_layer");
@@ -121,14 +128,14 @@ pub fn setup<ArkF: ArkPrimeField>(
     log::stop(Component::Prover, "sample_random_layer");
 
     #[cfg(feature = "metrics")]
-    log::tic(Component::Prover, "snark_params");
+    log::tic(Component::Prover, "snark_params_p");
     let (pk, _) = CompressedSNARK::<_, _, _, S1, S2>::setup(&pp).unwrap();
 
     #[cfg(feature = "metrics")]
-    log::stop(Component::Prover, "snark_params");
+    log::stop(Component::Prover, "snark_params_p");
 
     let p_i = ProverInfo {
-        ic_key_length: base.key_length,
+        ic_key_lengths: base.key_lengths.clone(),
         ic_blinds,
         ic_hints: ram_hints,
         snark_pk: pk,
@@ -153,7 +160,7 @@ pub fn make_coral_circuit<ArkF: ArkPrimeField>(
     #[cfg(feature = "metrics")]
     {
         log::tic(Component::Solver, format!("witness_synthesis_{}", i));
-        log::tic(Component::Solver, format!("witness_synthesis_ark_{}", i));
+        // log::tic(Component::Solver, format!("witness_synthesis_ark_{}", i));
     }
 
     let cs = ConstraintSystem::<ArkF>::new_ref();
@@ -187,10 +194,10 @@ pub fn make_coral_circuit<ArkF: ArkPrimeField>(
 
     irw.update(wires_res.unwrap());
 
-    #[cfg(feature = "metrics")]
-    {
-        log::stop(Component::Solver, format!("witness_synthesis_ark_{}", i));
-    }
+    // #[cfg(feature = "metrics")]
+    // {
+    //     log::stop(Component::Solver, format!("witness_synthesis_ark_{}", i));
+    // }
 
     let f = FCircuit::<N1>::new(cs.clone(), saved_matrix);
 
@@ -250,7 +257,7 @@ pub fn run_prove(
             &mut circuit_primary,
             Some(p_i.ic_blinds[i].clone()),
             p_i.ic_hints[i].clone(),
-            vec![p_i.ic_key_length],
+            p_i.ic_key_lengths.clone(),
         );
         assert!(res.is_ok());
 
@@ -315,7 +322,7 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
     let mut circuit_primary = make_coral_circuit(&mut base, &mut irw, 0, None);
 
     let z0_primary_full = circuit_primary.get_zi();
-    let z0_offset = p_i.ic_key_length;
+    let z0_offset = p_i.ic_key_lengths.iter().sum();
     let z0_primary = z0_primary_full[z0_offset..].to_vec();
 
     // produce a recursive SNARK
@@ -325,7 +332,7 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
         &z0_primary,
         Some(p_i.ic_blinds[0].clone()),
         p_i.ic_hints[0].clone(),
-        vec![p_i.ic_key_length],
+        p_i.ic_key_lengths.clone(),
     )
     .unwrap();
 
@@ -335,6 +342,7 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
     {
         log::stop(Component::Prover, "constraint_gen");
         log::r1cs(Component::Prover, "Num Constraints", pp.num_constraints().0);
+        // println!( "Num Constraints Secondary {:?}", pp.num_constraints().1);
         log::tic(Component::Prover, "prove_e2e");
     }
 
@@ -419,7 +427,7 @@ pub fn run_prover<ArkF: ArkPrimeField>(
     log::r1cs(Component::Prover, "Num Constraints", pp.num_constraints().0);
 
     let z0_primary_full = circuit_primary.get_zi().clone();
-    let z0_offset = p_i.ic_key_length;
+    let z0_offset = p_i.ic_key_lengths.iter().sum();
     let z0_primary = z0_primary_full[z0_offset..].to_vec();
 
     // produce a recursive SNARK
@@ -429,7 +437,7 @@ pub fn run_prover<ArkF: ArkPrimeField>(
         &z0_primary,
         Some(p_i.ic_blinds[0].clone()),
         p_i.ic_hints[0].clone(),
-        vec![p_i.ic_key_length],
+        p_i.ic_key_lengths.clone(),
     )
     .unwrap();
 
@@ -448,7 +456,7 @@ pub fn run_prover<ArkF: ArkPrimeField>(
             &mut circuit_primary,
             Some(p_i.ic_blinds[i].clone()),
             p_i.ic_hints[i].clone(),
-            vec![p_i.ic_key_length],
+            p_i.ic_key_lengths.clone(),
         );
         assert!(res.is_ok());
 
