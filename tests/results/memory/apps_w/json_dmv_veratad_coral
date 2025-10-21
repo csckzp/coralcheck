@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.37
+	System time (seconds): 0.86
+	Percent of CPU this job got: 775%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1039776
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 97427
+	Voluntary context switches: 0
+	Involuntary context switches: 51019
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.44
+	System time (seconds): 0.83
+	Percent of CPU this job got: 774%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1002944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 95267
+	Voluntary context switches: 0
+	Involuntary context switches: 47525
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.59
+	System time (seconds): 0.86
+	Percent of CPU this job got: 757%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1005568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 93929
+	Voluntary context switches: 0
+	Involuntary context switches: 50833
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.30
+	System time (seconds): 0.76
+	Percent of CPU this job got: 777%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1011824
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 97571
+	Voluntary context switches: 0
+	Involuntary context switches: 44555
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.76
+	System time (seconds): 0.84
+	Percent of CPU this job got: 778%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1009904
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 92097
+	Voluntary context switches: 0
+	Involuntary context switches: 51901
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.39
+	System time (seconds): 0.72
+	Percent of CPU this job got: 775%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1018192
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 97017
+	Voluntary context switches: 0
+	Involuntary context switches: 40055
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 40.02
+	System time (seconds): 0.82
+	Percent of CPU this job got: 772%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1003776
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 95446
+	Voluntary context switches: 0
+	Involuntary context switches: 46769
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.47
+	System time (seconds): 0.77
+	Percent of CPU this job got: 774%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1035264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 96939
+	Voluntary context switches: 0
+	Involuntary context switches: 44452
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.88
+	System time (seconds): 0.81
+	Percent of CPU this job got: 779%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1023504
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 97869
+	Voluntary context switches: 0
+	Involuntary context switches: 46908
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.74
+	System time (seconds): 0.82
+	Percent of CPU this job got: 781%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1072848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 101139
+	Voluntary context switches: 0
+	Involuntary context switches: 46451
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/dmv_veratad.txt -g ./grammars/json.pest -b 305 -m ./tests/results/timings/apps_w/json_dmv_veratad_coral.txt --prove"
+	User time (seconds): 39.47
+	System time (seconds): 0.81
+	Percent of CPU this job got: 775%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1043360
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 98612
+	Voluntary context switches: 0
+	Involuntary context switches: 46997
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 31.89
+	System time (seconds): 0.69
+	Percent of CPU this job got: 784%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 564832
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43815
+	Voluntary context switches: 4
+	Involuntary context switches: 45872
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 31.84
+	System time (seconds): 0.64
+	Percent of CPU this job got: 791%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 567696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43708
+	Voluntary context switches: 0
+	Involuntary context switches: 40600
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 32.00
+	System time (seconds): 0.65
+	Percent of CPU this job got: 787%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 546720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42466
+	Voluntary context switches: 0
+	Involuntary context switches: 42980
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 32.21
+	System time (seconds): 0.68
+	Percent of CPU this job got: 793%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 556272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43304
+	Voluntary context switches: 0
+	Involuntary context switches: 43788
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 31.69
+	System time (seconds): 0.65
+	Percent of CPU this job got: 777%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 572976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44108
+	Voluntary context switches: 0
+	Involuntary context switches: 41624
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 32.08
+	System time (seconds): 0.69
+	Percent of CPU this job got: 789%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 562544
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43507
+	Voluntary context switches: 0
+	Involuntary context switches: 43218
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 32.00
+	System time (seconds): 0.65
+	Percent of CPU this job got: 784%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 566720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43610
+	Voluntary context switches: 0
+	Involuntary context switches: 42092
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 32.15
+	System time (seconds): 0.67
+	Percent of CPU this job got: 794%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 567088
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43986
+	Voluntary context switches: 0
+	Involuntary context switches: 50038
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 31.64
+	System time (seconds): 0.66
+	Percent of CPU this job got: 780%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 564432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43471
+	Voluntary context switches: 0
+	Involuntary context switches: 41934
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 31.92
+	System time (seconds): 0.76
+	Percent of CPU this job got: 782%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 590656
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45413
+	Voluntary context switches: 0
+	Involuntary context switches: 52655
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/bank_plaid.txt -g ./grammars/json.pest -b 141 -m ./tests/results/timings/apps_w/json_bank_plaid_coral.txt --prove"
+	User time (seconds): 32.17
+	System time (seconds): 0.65
+	Percent of CPU this job got: 792%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 552608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42675
+	Voluntary context switches: 0
+	Involuntary context switches: 39955
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

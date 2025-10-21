@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 28.92
+	System time (seconds): 0.59
+	Percent of CPU this job got: 764%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 531328
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 41408
+	Voluntary context switches: 5
+	Involuntary context switches: 38418
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.11
+	System time (seconds): 0.56
+	Percent of CPU this job got: 778%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.81
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 543136
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43382
+	Voluntary context switches: 0
+	Involuntary context switches: 38701
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.54
+	System time (seconds): 0.51
+	Percent of CPU this job got: 784%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 545952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42269
+	Voluntary context switches: 0
+	Involuntary context switches: 34141
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.21
+	System time (seconds): 0.54
+	Percent of CPU this job got: 784%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 541632
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42008
+	Voluntary context switches: 0
+	Involuntary context switches: 34093
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.02
+	System time (seconds): 0.50
+	Percent of CPU this job got: 782%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 543296
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42237
+	Voluntary context switches: 0
+	Involuntary context switches: 32793
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.01
+	System time (seconds): 0.53
+	Percent of CPU this job got: 784%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 566336
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43780
+	Voluntary context switches: 0
+	Involuntary context switches: 34930
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.28
+	System time (seconds): 0.60
+	Percent of CPU this job got: 779%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 552912
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42949
+	Voluntary context switches: 0
+	Involuntary context switches: 37294
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.06
+	System time (seconds): 0.54
+	Percent of CPU this job got: 783%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 549936
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42917
+	Voluntary context switches: 0
+	Involuntary context switches: 33407
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.43
+	System time (seconds): 0.46
+	Percent of CPU this job got: 786%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 538080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42043
+	Voluntary context switches: 0
+	Involuntary context switches: 31678
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 29.54
+	System time (seconds): 0.57
+	Percent of CPU this job got: 771%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 534976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 41674
+	Voluntary context switches: 0
+	Involuntary context switches: 41645
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/json/hibp.txt -g ./grammars/json.pest -b 136 -m ./tests/results/timings/apps_w/json_hibp_coral.txt --prove"
+	User time (seconds): 28.98
+	System time (seconds): 0.51
+	Percent of CPU this job got: 775%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 539008
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42023
+	Voluntary context switches: 0
+	Involuntary context switches: 34456
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0

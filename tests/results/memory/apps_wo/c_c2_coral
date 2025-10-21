@@ -1,0 +1,253 @@
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.44
+	System time (seconds): 0.64
+	Percent of CPU this job got: 697%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.59
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 770688
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62372
+	Voluntary context switches: 0
+	Involuntary context switches: 38488
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.34
+	System time (seconds): 0.58
+	Percent of CPU this job got: 703%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 774496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62514
+	Voluntary context switches: 0
+	Involuntary context switches: 32487
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.44
+	System time (seconds): 0.57
+	Percent of CPU this job got: 707%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 766992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62080
+	Voluntary context switches: 0
+	Involuntary context switches: 31807
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.31
+	System time (seconds): 0.61
+	Percent of CPU this job got: 702%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 768992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62205
+	Voluntary context switches: 0
+	Involuntary context switches: 32383
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.31
+	System time (seconds): 0.57
+	Percent of CPU this job got: 702%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 769760
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62035
+	Voluntary context switches: 0
+	Involuntary context switches: 30593
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.46
+	System time (seconds): 0.69
+	Percent of CPU this job got: 704%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 773424
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62649
+	Voluntary context switches: 0
+	Involuntary context switches: 35570
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.34
+	System time (seconds): 0.62
+	Percent of CPU this job got: 703%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 769792
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62232
+	Voluntary context switches: 0
+	Involuntary context switches: 33660
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.26
+	System time (seconds): 0.62
+	Percent of CPU this job got: 693%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 768320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 61953
+	Voluntary context switches: 0
+	Involuntary context switches: 33933
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.33
+	System time (seconds): 0.59
+	Percent of CPU this job got: 703%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 770368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 62194
+	Voluntary context switches: 0
+	Involuntary context switches: 34721
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.30
+	System time (seconds): 0.58
+	Percent of CPU this job got: 701%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 766336
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 61727
+	Voluntary context switches: 0
+	Involuntary context switches: 34704
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
+	Command being timed: "./target/release/coral -d ./tests/test_docs/c/c2.txt -g ./grammars/c_simple.pest -b 155 -m ./tests/results/timings/apps_wo/c_c2_coral.txt --prove"
+	User time (seconds): 24.12
+	System time (seconds): 0.63
+	Percent of CPU this job got: 695%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 756208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 60574
+	Voluntary context switches: 0
+	Involuntary context switches: 34641
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 16384
+	Exit status: 0
