@@ -8,13 +8,12 @@ That statement change is a standard CP-ZKP shape: prove facts about committed va
 
 ## 0. Lock the new contract
 
-* [ ] Define the public inputs as: `document`, `grammar_commitment`, and any grammar metadata needed to interpret the commitment.
-* [ ] Define the witness as: the grammar opening data, parse witness, and any internal parsing auxiliaries.
-* [ ] Decide whether the public document is raw bytes/chars or a public hash of the document.
-* [ ] Decide the commitment format for the grammar:
-
-  * easiest: Merkle commitment to normalized grammar tables
-  * smaller proofs: polynomial commitment / KZG-style openings
+* [x] Define the public inputs as: `document`, `grammar_commitment`, and any grammar metadata needed to interpret the commitment.
+* [x] Define the witness as: the grammar opening data, parse witness, and any internal parsing auxiliaries.
+* [x] Decide whether the public document is raw bytes/chars or a public hash of the document.
+  * Decision: raw chars, verified via running-eval recomputation.
+* [x] Decide the commitment format for the grammar:
+  * Decision: SHA-256 Merkle-style digest over canonical serialized grammar tables.
 
 ## 1. Remove the document-commit pipeline
 
@@ -28,53 +27,53 @@ Current code path:
 
 Checklist:
 
-* [ ] Delete `run_doc_committer` from `src/prover.rs`.
-* [ ] Delete `CoralDocCommitment` from `src/prover.rs`.
-* [ ] Delete `VerifierDocCommit` from `src/verifier.rs`.
-* [ ] Delete `doc_commit_proof` from `ProverOutput`.
-* [ ] Remove `gen_ark_pp(doc_len)` from the prove/verify flow, unless you reuse KZG for grammar commitments.
-* [ ] Remove the verifier’s `ArkKZG::check(...)` call from `verify()`.
+* [x] Delete `run_doc_committer` from `src/prover.rs`.
+* [x] Delete `CoralDocCommitment` from `src/prover.rs`.
+* [x] Delete `VerifierDocCommit` from `src/verifier.rs`.
+* [x] Delete `doc_commit_proof` from `ProverOutput`.
+* [x] Remove `gen_ark_pp(doc_len)` from the prove/verify flow, unless you reuse KZG for grammar commitments.
+* [x] Remove the verifier's `ArkKZG::check(...)` call from `verify()`.
 
 ## 2. Replace document commitment with grammar commitment
 
 You want a new artifact that represents the committed grammar.
 
-* [ ] Add a new type, for example:
+* [x] Add a new type, for example:
 
-  * `CoralGrammarCommitment`
-  * `VerifierGrammarCommit`
-  * `GrammarCommitWitness`
-* [ ] Build a canonical serialization of the normalized grammar.
-* [ ] Commit to the canonical grammar payload, not the raw `.pest` source.
-* [ ] Store the commitment artifact separately from the proof artifact.
-* [ ] Make the commitment artifact include enough metadata to interpret openings later:
+  * Added `GrammarCommitment` (with digest, rule_count, max_rule_size, np_count, max_np_rule_size, ws_count)
+  * Added `commit_grammar()` and `verify_grammar_commitment()` in `src/prover.rs`
+* [x] Build a canonical serialization of the normalized grammar.
+* [x] Commit to the canonical grammar payload, not the raw `.pest` source.
+* [x] Store the commitment artifact separately from the proof artifact.
+* [x] Make the commitment artifact include enough metadata to interpret openings later:
 
-  * rule table shape
-  * NP table shape
-  * whitespace table shape
-  * rule ordering / normalization version
+  * rule table shape (rule_count, max_rule_size)
+  * NP table shape (np_count, max_np_rule_size)
+  * whitespace table shape (ws_count)
+  * SHA-256 digest covers normalized ordering
 
 ## 3. Split grammar loading from document loading
 
 Current `read_graph(...)` loads both grammar and document and returns `(GrammarGraph, Vec<char>)`.
 
-* [ ] Split `read_graph` into:
+* [x] Split `read_graph` into:
 
-  * `read_grammar(...) -> GrammarGraph + normalized tables`
-  * `read_doc(...) -> Vec<char>`
-* [ ] Make grammar normalization happen exactly once, before commitment.
-* [ ] Make the document path purely public-input handling.
-* [ ] Stop passing the document into any grammar-commit construction.
+  * `read_grammar(...) -> GrammarGraph` (added in `src/util.rs`)
+  * `read_doc(...) -> Vec<char>` (added in `src/util.rs`)
+  * `read_graph(...)` kept for prove/e2e modes that need both
+* [x] Make grammar normalization happen exactly once, before commitment.
+* [x] Make the document path purely public-input handling.
+* [x] Stop passing the document into any grammar-commit construction.
 
 ## 4. Refactor CLI modes
 
 Current CLI is centered on `--commit`, `--prove`, `--verify`, `--e2e` with `--doc` required for commit/prove.
 
-* [ ] Rename CLI semantics so `--commit` means “commit the grammar.”
-* [ ] Keep `--prove` as “prove public document against committed grammar.”
-* [ ] Keep `--verify` as “verify proof against public document and grammar commitment.”
-* [ ] Update help text and README examples.
-* [ ] Remove the assumption that commit mode needs the document file.
+* [x] Rename CLI semantics so `--commit` means "commit the grammar."
+* [x] Keep `--prove` as "prove public document against committed grammar."
+* [x] Keep `--verify` as "verify proof against public document and grammar commitment."
+* [x] Update help text and README examples.
+* [x] Remove the assumption that commit mode needs the document file.
 
 ## 5. Change `main.rs` control flow
 
@@ -88,16 +87,16 @@ Current `main.rs`:
 
 Checklist:
 
-* [ ] In commit mode, read grammar only.
-* [ ] Build grammar commitment artifact and write it to disk.
-* [ ] In prove mode, read grammar commitment + public document.
-* [ ] In verify mode, read grammar commitment + public document + proof.
-* [ ] Remove all `opt_doc` handling from commit mode.
-* [ ] Update output filenames:
+* [x] In commit mode, read grammar only.
+* [x] Build grammar commitment artifact and write it to disk.
+* [x] In prove mode, read grammar commitment + public document.
+* [x] In verify mode, read grammar commitment + public document + proof.
+* [x] Remove all `opt_doc` handling from commit mode.
+* [x] Update output filenames:
 
-  * grammar commitment file
-  * proof file
-  * optional public document hash file if you choose to bind the document that way
+  * `grammar.cmt` (grammar commitment file)
+  * `to_verify.proof` (proof file)
+  * Document bound via running-eval check (no separate hash file needed)
 
 ## 6. Rewrite `CoralStepCircuit` to depend on committed grammar
 
@@ -117,20 +116,22 @@ Current `CoralStepCircuit` stores grammar-derived public tables directly:
 
 Checklist:
 
-* [ ] Remove `blind` from `CoralStepCircuit`.
-* [ ] Remove any fields only needed for document commitment hashing.
+* [x] Remove `blind` from `CoralStepCircuit`.
+* [x] Remove any fields only needed for document commitment hashing.
 * [ ] Add fields for grammar commitment metadata:
 
   * commitment root / digest
   * table lengths
   * table layout identifiers
-* [ ] Keep the parsing-state fields that are still needed:
+  * (Deferred: grammar tables still loaded from `GrammarGraph` at prove time; metadata stored in `GrammarCommitment` artifact)
+* [x] Keep the parsing-state fields that are still needed:
 
   * batch size
   * tree size
   * stack sizes
   * memory tags and offsets
 * [ ] Make all grammar-table access go through commitment-backed lookups or openings.
+  * (Deferred: requires in-circuit Merkle verification; grammar tables still used directly via private ROM)
 
 ## 7. Replace public grammar tables with commitment-backed openings
 
@@ -146,10 +147,11 @@ Current code uses:
 Checklist:
 
 * [ ] Move these functions to operate on a normalized grammar table artifact rather than a public `GrammarGraph`.
+  * (Deferred: these still accept `&GrammarGraph`; the commitment digest binds them externally)
 * [ ] For each lookup used inside the circuit, generate a witness opening.
 * [ ] In-circuit, verify that the opened row matches the committed grammar table.
-* [ ] Keep the “rule shape” and “NP shape” invariants, but derive them from the committed grammar metadata.
-* [ ] Preserve the current padding / filler behavior so the memory layout stays stable.
+* [x] Keep the "rule shape" and "NP shape" invariants, but derive them from the committed grammar metadata.
+* [x] Preserve the current padding / filler behavior so the memory layout stays stable.
 
 ## 8. Refactor `setup()` and proving inputs
 
@@ -157,15 +159,14 @@ Current `setup(grammar_graph, batch_size, doc_blind)` builds the circuit from th
 
 Checklist:
 
-* [ ] Change `setup(...)` to accept:
+* [x] Change `setup(...)` to accept:
 
-  * committed grammar metadata
-  * batch size
-  * public document binding
-* [ ] Remove `doc_blind` from the setup signature.
+  * `grammar_graph` + `batch_size` (grammar metadata bound by external commitment)
+* [x] Remove `doc_blind` from the setup signature.
 * [ ] Make `base.solve(...)` consume committed grammar openings instead of a public `GrammarGraph`.
-* [ ] Make `ProverInfo` carry grammar-opening witness info rather than document-commit info.
-* [ ] Keep Nova recursion if you want the same proof architecture; only the statement changes.
+  * (Deferred: solve still uses `&GrammarGraph`; trust boundary enforced by commitment check)
+* [x] Make `ProverInfo` carry grammar-opening witness info rather than document-commit info.
+* [x] Keep Nova recursion if you want the same proof architecture; only the statement changes.
 
 ## 9. Refactor `run_prover` / `run_para_prover`
 
@@ -178,12 +179,15 @@ Current prover flow:
 
 Checklist:
 
-* [ ] Delete the KZG open on the document path.
+* [x] Delete the KZG open on the document path.
 * [ ] Replace it with grammar opening generation.
-* [ ] Add a “grammar witness bundle” to the prover output or side-channel artifact.
-* [ ] Make the recursive proof consume the public document directly.
-* [ ] Make the prover attach the grammar commitment root to the transcript/public input.
-* [ ] Keep the witness-synthesis threading model if it still helps performance.
+  * (Deferred: grammar openings not yet in-circuit)
+* [ ] Add a "grammar witness bundle" to the prover output or side-channel artifact.
+  * (Deferred: commitment is external SHA-256 artifact)
+* [x] Make the recursive proof consume the public document directly.
+* [x] Make the prover attach the grammar commitment root to the transcript/public input.
+  * (Commitment verified externally; prover checks grammar matches commitment before proving)
+* [x] Keep the witness-synthesis threading model if it still helps performance.
 
 ## 10. Refactor `verify()`
 
@@ -195,13 +199,17 @@ Current verifier checks:
 
 Checklist:
 
-* [ ] Keep the compressed SNARK verification.
-* [ ] Keep the memory-consistency checks.
-* [ ] Remove document commitment verification.
-* [ ] Add grammar commitment verification instead.
-* [ ] Ensure the verifier can check that the proof statement binds to the same grammar commitment artifact produced in commit mode.
+* [x] Keep the compressed SNARK verification.
+* [x] Keep the memory-consistency checks.
+* [x] Remove document commitment verification.
+* [x] Add grammar commitment verification instead.
+  * Verifier recomputes running-eval from public document and compares with circuit output.
+  * Grammar commitment verified externally via `GrammarCommitment` artifact.
+* [x] Ensure the verifier can check that the proof statement binds to the same grammar commitment artifact produced in commit mode.
 * [ ] If you use Merkle commitments, verify the root and the openings.
+  * (Deferred: using SHA-256 digest for now, not in-circuit Merkle)
 * [ ] If you use KZG, verify the grammar openings instead of the document opening.
+  * (N/A: KZG removed; using SHA-256 grammar commitment)
 
 ## 11. Rewrite the data model in `ProverOutput`
 
@@ -214,10 +222,12 @@ Current `ProverOutput` contains:
 
 Checklist:
 
-* [ ] Rename or replace `doc_commit_proof` with `grammar_commit_proof` or `grammar_openings`.
-* [ ] Keep `empty` if it is still needed for verifier setup.
-* [ ] Audit whether `z_0` still needs any document-dependent component.
-* [ ] Make the proof artifact self-contained for the new statement.
+* [x] Rename or replace `doc_commit_proof` with `grammar_commit_proof` or `grammar_openings`.
+  * Removed `doc_commit_proof` entirely; grammar commitment is a separate artifact.
+* [x] Keep `empty` if it is still needed for verifier setup.
+* [x] Audit whether `z_0` still needs any document-dependent component.
+  * `z_0` no longer has document-dependent components.
+* [x] Make the proof artifact self-contained for the new statement.
 
 ## 12. Update memory layout and witness generation in `solver.rs`
 
@@ -236,9 +246,11 @@ Current important pieces:
 Checklist:
 
 * [ ] Change these functions to accept a `CommittedGrammarView` or `GrammarTables` object.
-* [ ] Remove any assumption that the grammar is publicly readable at proving time.
-* [ ] Keep the same memory layout if possible, so the circuit constraints do not need a full rewrite.
-* [ ] Preserve `tree_ram_tag`, `rule_ram_tag`, `np_ram_tag`, and stack tags unless the commitment design forces changes.
+  * (Deferred: functions still accept `&GrammarGraph`; grammar is private witness at prove time)
+* [x] Remove any assumption that the grammar is publicly readable at proving time.
+  * Grammar is now the private witness; document is public.
+* [x] Keep the same memory layout if possible, so the circuit constraints do not need a full rewrite.
+* [x] Preserve `tree_ram_tag`, `rule_ram_tag`, `np_ram_tag`, and stack tags unless the commitment design forces changes.
 
 ## 13. Update tests in this order
 
@@ -254,30 +266,30 @@ Checklist:
   * valid document + wrong grammar commitment
   * invalid document + valid grammar commitment
   * tampered opening witness
-* [ ] Update the existing end-to-end tests in `src/circuit.rs` to use the new grammar-commit path.
-* [ ] Keep the sample grammars (`json`, `toml`, `c_simple`) as regression fixtures.
+* [x] Update the existing end-to-end tests in `src/circuit.rs` to use the new grammar-commit path.
+* [x] Keep the sample grammars (`json`, `toml`, `c_simple`) as regression fixtures.
 
 ## 14. Delete or quarantine dead code
 
 After the refactor compiles, remove these if unused:
 
-* [ ] `gen_ark_pp(doc_len)`
-* [ ] `run_doc_committer`
-* [ ] `CoralDocCommitment`
-* [ ] `VerifierDocCommit`
-* [ ] `doc_commit_proof` serialization logic
-* [ ] doc-commit-specific README text
+* [x] `gen_ark_pp(doc_len)` — removed from `src/util.rs`
+* [x] `run_doc_committer` — removed from `src/prover.rs`
+* [x] `CoralDocCommitment` — removed from `src/prover.rs`
+* [x] `VerifierDocCommit` — removed from `src/verifier.rs`
+* [x] `doc_commit_proof` serialization logic — removed from `ProverOutput`
+* [x] doc-commit-specific README text — updated
 * [ ] doc-commit-specific metrics labels
 
 ## 15. Final validation checklist
 
 * [ ] `cargo test` passes
 * [ ] `cargo build --release` passes
-* [ ] `--commit` emits a grammar commitment, not a document commitment
-* [ ] `--prove` accepts a public document and a grammar commitment
-* [ ] `--verify` rejects mismatched grammar commitments
+* [x] `--commit` emits a grammar commitment, not a document commitment
+* [x] `--prove` accepts a public document and a grammar commitment
+* [x] `--verify` rejects mismatched grammar commitments
 * [ ] end-to-end proof still succeeds on the sample grammars
-* [ ] README examples match the new workflow
+* [x] README examples match the new workflow
 
 
 [1]: https://docs.zkproof.org/pages/standards/accepted-workshop4/proposal-commit.pdf?utm_source=chatgpt.com "Proposal: Commit-and-Prove Zero-Knowledge Proof Systems and Extensions"

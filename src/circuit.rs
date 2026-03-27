@@ -216,14 +216,10 @@ pub fn extend_commit<F: ArkPrimeField>(
     wires: &CoralWires<F>,
     memory: &mut RunningMemWires<F>,
     val: &FpVar<F>,
-    cs: ConstraintSystemRef<F>,
+    _cs: ConstraintSystemRef<F>,
 ) -> Result<FpVar<F>, SynthesisError> {
-    let blind = FpVar::new_witness(cs.clone(), || Ok(csc.blind))?;
     let running_eval = &wires.running_eval;
-    let is_one = running_eval.is_eq(&FpVar::one())?;
     let chal = memory.perm_chal.clone();
-
-    let cond_running_eval = is_one.select(&(&chal[0] - &blind), running_eval)?;
 
     let epsilon_val = FpVar::constant(csc.epsilon_val);
 
@@ -231,11 +227,11 @@ pub fn extend_commit<F: ArkPrimeField>(
 
     let same_eval = !terminal | &is_epsilon;
 
-    let root = (val * shift) + &wires.doc_ctr; //To account for SOI 
+    let root = (val * shift) + &wires.doc_ctr;
     let next_root = &chal[0] - root;
-    let eval = &wires.running_eval * next_root;
+    let eval = running_eval * next_root;
 
-    same_eval.select(&cond_running_eval, &eval)
+    same_eval.select(running_eval, &eval)
 }
 
 #[tracing::instrument(target = "gr1cs")]
@@ -889,7 +885,7 @@ pub fn ivcify<F: ArkPrimeField>(
 #[cfg(test)]
 mod tests {
     use crate::parser::*;
-    use crate::prover::{run_doc_committer, setup};
+    use crate::prover::setup;
     use crate::{circuit::*, solver::InterRoundWires, util::*};
     use ark_bn254::Fr as F;
     use ark_relations::gr1cs::{
@@ -915,12 +911,8 @@ mod tests {
 
         let nodes_per_step = 1;
 
-        let (ark_ck, _) = gen_ark_pp(input_text.len());
-
-        let doc_commit = run_doc_committer(&input_text.chars().collect(), &ark_ck);
-
         let (_, mut base, _, _) =
-            setup::<AF>(&grammar_graph, nodes_per_step, doc_commit.blind).unwrap();
+            setup::<AF>(&grammar_graph, nodes_per_step).unwrap();
 
         let mut irw = InterRoundWires::new();
 

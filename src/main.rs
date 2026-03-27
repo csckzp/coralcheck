@@ -2,15 +2,12 @@
 
 mod parser;
 use anyhow::Result;
-use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
 use clap::Parser;
-use coral::parser::GrammarGraph;
-use coral::verifier::{self, VerifierDocCommit};
 use coral::{
     config::*,
     prover::{self, *},
     util::*,
-    verifier::verify,
+    verifier::{self, verify},
 };
 use std::fs;
 
@@ -19,97 +16,76 @@ use metrics::metrics::{log, log::Component};
 fn main() -> Result<()> {
     let opt = Options::parse();
 
-    let grammar_path = opt.grammar;
-    let input_text_path = opt.doc;
+    let grammar_path = opt.grammar.clone();
+    let input_text_path = opt.doc.clone();
     let batch_size = opt.batch_size;
 
-    let mut opt_grammar_graph: Option<GrammarGraph> = None;
-    let mut opt_doc: Option<Vec<char>> = None;
+    // ------------------------------------------------------------------
+    // Commit mode: grammar only → grammar commitment artifact
+    // ------------------------------------------------------------------
+    if opt.commit {
+        let grammar_path = grammar_path
+            .as_ref()
+            .expect("Grammar file (-g) is required for --commit");
 
-    // if opt.commit || opt.prove || opt.e2e {
-        assert!(
-            input_text_path.is_some(),
-            "Input text file must be provided for commit or prove"
-        );
-
-        let (grammar_graph, doc) = read_graph(
-            grammar_path.clone(),
-            input_text_path.as_ref().unwrap().clone(),
-        );
-
-        opt_grammar_graph = Some(grammar_graph);
-        opt_doc = Some(doc);
-    // }
-
-    if opt.e2e || opt.commit {
-        #[cfg(feature = "metrics")]
-        log::tic(Component::Generator, "doc_commit_params");
-
-        let (ark_ck, ark_vk) = gen_ark_pp(opt_doc.as_ref().unwrap().len());
+        let grammar_graph = read_grammar(grammar_path.clone());
 
         #[cfg(feature = "metrics")]
-        log::stop(Component::Generator, "doc_commit_params");
+        log::tic(Component::Generator, "grammar_commit");
 
-        let doc_commit = run_doc_committer(opt_doc.as_ref().unwrap(), &ark_ck);
+        let grammar_commit = commit_grammar(&grammar_graph);
 
-        let mut prover_compressed_bytes = Vec::new();
-        doc_commit
-            .serialize_compressed(&mut prover_compressed_bytes)
-            .unwrap();
-        fs::write(
-            get_name(opt.cmt_name.clone(), true, true),
-            prover_compressed_bytes,
-        )
-        .expect("Unable to write file");
+        #[cfg(feature = "metrics")]
+        log::stop(Component::Generator, "grammar_commit");
 
-        let v_doc_commit = verifier::VerifierDocCommit {
-            doc_commit: doc_commit.doc_commit,
-            doc_commit_vk: ark_vk,
-        };
-        let mut verifier_compressed_bytes = Vec::new();
-        v_doc_commit
-            .serialize_compressed(&mut verifier_compressed_bytes)
-            .unwrap();
-        fs::write(
-            get_name(opt.cmt_name.clone(), true, false),
-            verifier_compressed_bytes,
-        )
-        .expect("Unable to write file");
+        let commit_bytes = bincode::serialize(&grammar_commit).unwrap();
+        fs::write(get_commit_name(opt.cmt_name.clone()), commit_bytes)
+            .expect("Unable to write grammar commitment file");
+
+        println!(
+            "Grammar commitment written to {}",
+            get_commit_name(opt.cmt_name.clone())
+        );
     }
 
-    if opt.e2e || opt.prove {
-        // read commitment
-        let prover_cmt_data =
-            fs::read(get_name(opt.cmt_name.clone(), true, true)).expect("Unable to read file");
+    // ------------------------------------------------------------------
+    // E2E mode: commit + prove + verify in one shot
+    // ------------------------------------------------------------------
+    if opt.e2e {
+        let grammar_path = grammar_path
+            .as_ref()
+            .expect("Grammar file (-g) is required for --e2e");
+        let doc_path = input_text_path
+            .as_ref()
+            .expect("Document file (-d) is required for --e2e");
 
-        let prover_doc_commit: CoralDocCommitment =
-            CoralDocCommitment::deserialize_compressed_unchecked(&*prover_cmt_data).unwrap();
+        // 1. Build grammar commitment
+        let (grammar_graph, doc) = read_graph(grammar_path.clone(), doc_path.clone());
 
+        #[cfg(feature = "metrics")]
+        log::tic(Component::Generator, "grammar_commit");
+
+        let grammar_commit = commit_grammar(&grammar_graph);
+
+        #[cfg(feature = "metrics")]
+        log::stop(Component::Generator, "grammar_commit");
+
+        let commit_bytes = bincode::serialize(&grammar_commit).unwrap();
+        fs::write(get_commit_name(opt.cmt_name.clone()), commit_bytes)
+            .expect("Unable to write grammar commitment file");
+
+        // 2. Prove
         #[allow(unused_mut)]
-        let (mut p_i, mut base, mut empty, pp) = prover::setup(
-            opt_grammar_graph.as_ref().unwrap(),
-            batch_size,
-            prover_doc_commit.blind,
-        )
-        .unwrap();
+        let (mut p_i, mut base, mut empty, pp) =
+            prover::setup(&grammar_graph, batch_size).unwrap();
 
         #[cfg(feature = "para")]
-        let prover_output_res = run_para_prover::<AF>(
-            opt_grammar_graph.as_ref().unwrap(),
-            base,
-            &mut p_i,
-            prover_doc_commit,
-            &pp,
-        );
+        let prover_output_res =
+            run_para_prover::<AF>(&grammar_graph, base, &mut p_i, &pp);
 
         #[cfg(not(feature = "para"))]
-        let prover_output_res = run_prover::<AF>(
-            opt_grammar_graph.as_ref().unwrap(),
-            &mut base,
-            &mut p_i,
-            prover_doc_commit,
-            &pp,
-        );
+        let prover_output_res =
+            run_prover::<AF>(&grammar_graph, &mut base, &mut p_i, &pp);
 
         assert!(prover_output_res.is_ok());
 
@@ -118,44 +94,114 @@ fn main() -> Result<()> {
 
         let prover_output_data = bincode::serialize(&prover_output).unwrap();
         fs::write(
-            get_name(opt.proof_name.clone(), false, false),
+            get_proof_name(opt.proof_name.clone()),
             prover_output_data,
         )
-        .expect("Unable to write file");
-    }
-    if opt.e2e || opt.verify {
+        .expect("Unable to write proof file");
+
+        // 3. Verify
         let data_from_prover =
-            fs::read(get_name(opt.proof_name.clone(), false, false)).expect("Unable to read file");
-        let mut prover_output = bincode::deserialize::<ProverOutput>(&data_from_prover).unwrap();
+            fs::read(get_proof_name(opt.proof_name.clone())).expect("Unable to read proof file");
+        let mut prover_output_v =
+            bincode::deserialize::<ProverOutput>(&data_from_prover).unwrap();
+
+        let mut empty_v = prover_output_v.empty.take().unwrap();
+        let v_i = verifier::setup(&mut empty_v);
+
+        let commit_data =
+            fs::read(get_commit_name(opt.cmt_name.clone())).expect("Unable to read commitment file");
+        let grammar_commit_v: GrammarCommitment =
+            bincode::deserialize(&commit_data).unwrap();
+
+        let verifier_output = verify(&mut prover_output_v, v_i, &doc, &grammar_commit_v);
+        assert!(verifier_output.is_ok());
+
+        #[cfg(feature = "metrics")]
+        metrics_file(
+            opt.metrics.clone(),
+            grammar_path,
+            doc_path,
+            doc.len(),
+            grammar_graph.lcrs_tree.node_count(),
+            opt.batch_size,
+            grammar_graph.rule_count,
+        );
+    }
+
+    // ------------------------------------------------------------------
+    // Prove mode: grammar commitment + grammar + document → proof
+    // ------------------------------------------------------------------
+    if opt.prove && !opt.e2e {
+        let grammar_path = grammar_path
+            .as_ref()
+            .expect("Grammar file (-g) is required for --prove");
+        let doc_path = input_text_path
+            .as_ref()
+            .expect("Document file (-d) is required for --prove");
+
+        let (grammar_graph, _doc) = read_graph(grammar_path.clone(), doc_path.clone());
+
+        // Optionally verify the grammar matches its commitment
+        let commit_data =
+            fs::read(get_commit_name(opt.cmt_name.clone())).expect("Unable to read commitment file");
+        let grammar_commit: GrammarCommitment =
+            bincode::deserialize(&commit_data).unwrap();
+        assert!(
+            verify_grammar_commitment(&grammar_graph, &grammar_commit),
+            "Grammar does not match commitment"
+        );
+
+        #[allow(unused_mut)]
+        let (mut p_i, mut base, mut empty, pp) =
+            prover::setup(&grammar_graph, batch_size).unwrap();
+
+        #[cfg(feature = "para")]
+        let prover_output_res =
+            run_para_prover::<AF>(&grammar_graph, base, &mut p_i, &pp);
+
+        #[cfg(not(feature = "para"))]
+        let prover_output_res =
+            run_prover::<AF>(&grammar_graph, &mut base, &mut p_i, &pp);
+
+        assert!(prover_output_res.is_ok());
+
+        let mut prover_output = prover_output_res.unwrap();
+        prover_output.empty = Some(empty);
+
+        let prover_output_data = bincode::serialize(&prover_output).unwrap();
+        fs::write(
+            get_proof_name(opt.proof_name.clone()),
+            prover_output_data,
+        )
+        .expect("Unable to write proof file");
+    }
+
+    // ------------------------------------------------------------------
+    // Verify mode: grammar commitment + document + proof → result
+    // ------------------------------------------------------------------
+    if opt.verify && !opt.e2e {
+        let doc_path = input_text_path
+            .as_ref()
+            .expect("Document file (-d) is required for --verify");
+
+        let doc = read_doc(doc_path.clone());
+
+        let data_from_prover =
+            fs::read(get_proof_name(opt.proof_name.clone())).expect("Unable to read proof file");
+        let mut prover_output =
+            bincode::deserialize::<ProverOutput>(&data_from_prover).unwrap();
 
         let mut empty = prover_output.empty.take().unwrap();
-
         let v_i = verifier::setup(&mut empty);
 
-        let verifer_doc_commit_data =
-            fs::read(get_name(opt.cmt_name.clone(), true, false)).expect("Unable to read file");
-        let verifier_doc_commit: VerifierDocCommit =
-            VerifierDocCommit::deserialize_compressed_unchecked(&*verifer_doc_commit_data).unwrap();
+        let commit_data =
+            fs::read(get_commit_name(opt.cmt_name.clone())).expect("Unable to read commitment file");
+        let grammar_commit: GrammarCommitment =
+            bincode::deserialize(&commit_data).unwrap();
 
-        let verifier_output = verify(&mut prover_output, v_i, verifier_doc_commit);
-
+        let verifier_output = verify(&mut prover_output, v_i, &doc, &grammar_commit);
         assert!(verifier_output.is_ok());
     }
 
-    #[cfg(feature = "metrics")]
-    {
-        // if opt_grammar_graph.is_some() && input_text_path.is_some() {
-            metrics_file(
-                opt.metrics.clone(),
-                &grammar_path,
-                &input_text_path.unwrap(),
-                opt_doc.unwrap().len(),
-                opt_grammar_graph.as_ref().unwrap().lcrs_tree.node_count(),
-                opt.batch_size,
-                opt_grammar_graph.as_ref().unwrap().rule_count,
-            );
-            log::write_csv(&opt.metrics.clone().unwrap().as_path().display().to_string()).unwrap();
-        // }
-    }
     Ok(())
 }

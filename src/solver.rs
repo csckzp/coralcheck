@@ -368,8 +368,6 @@ pub fn converted_np_map<F: ArkPrimeField>(
 pub struct CoralStepCircuit<F: ArkPrimeField> {
     //empty bool
     pub empty: bool,
-    //Blind for hashchain
-    pub blind: F,
     //Public Values
     pub ws_pts: Vec<F>,
     pub rule_size: usize,
@@ -415,7 +413,7 @@ pub struct CoralStepCircuit<F: ArkPrimeField> {
 }
 
 impl<F: ArkPrimeField> CoralStepCircuit<F> {
-    pub fn new(g: &GrammarGraph, batch_size: usize, doc_blind: F) -> Self {
+    pub fn new(g: &GrammarGraph, batch_size: usize) -> Self {
         let epsilon_val_hash: F = coral_hash("");
 
         let tree_size = g.lcrs_tree.node_count();
@@ -434,8 +432,6 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
 
         Self {
             empty: false,
-            //Blind for KZG
-            blind: doc_blind,
             //Public Values
             negative_one: F::from(-1),
             ws_pts: make_whitespace_vec(g),
@@ -490,7 +486,6 @@ impl<F: ArkPrimeField> CoralStepCircuit<F> {
         let mut empty = self.clone();
 
         empty.empty = true;
-        empty.blind = F::ZERO;
 
         let filler_vec_rule: Vec<F> = (0..self.rule_size).map(|_| F::ZERO).collect();
         let filler_vec_np: Vec<F> = (0..self.np_size).map(|_| F::ZERO).collect();

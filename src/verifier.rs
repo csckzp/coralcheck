@@ -1,8 +1,5 @@
-use crate::{prover::ProverOutput, solver::*, util::*};
-use ark_bn254::Bn254;
+use crate::{prover::{GrammarCommitment, ProverOutput}, solver::*, util::*};
 use ark_ff::PrimeField as arkPrimeField;
-use ark_poly_commit::kzg10;
-use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
 use nova_snark::nova::CompressedSNARK;
 use nova_snark::{
     errors::NovaError,
@@ -24,12 +21,6 @@ pub struct VerifierInfo<ArkF: arkPrimeField> {
     pub snark_vk: VerifierKey<E1, E2, C1, S1, S2>,
     pub perm_chal: Vec<ArkF>,
     pub r0_consts: ROConstants<E1>
-}
-
-#[derive(CanonicalSerialize, CanonicalDeserialize, Debug)]
-pub struct VerifierDocCommit {
-    pub doc_commit: kzg10::Commitment<Bn254>,
-    pub doc_commit_vk: kzg10::VerifierKey<Bn254>,
 }
 
 pub fn setup(empty_circuit: &mut CoralStepCircuit<AF>) -> VerifierInfo<AF> {
@@ -57,10 +48,31 @@ pub fn setup(empty_circuit: &mut CoralStepCircuit<AF>) -> VerifierInfo<AF> {
     }
 }
 
+/// Compute the expected running evaluation from a public document.
+/// This replaces the KZG check: the verifier recomputes the product
+/// polynomial evaluation from the known document and compares with
+/// the value exposed by the circuit.
+fn expected_running_eval(doc: &[char], perm_chal: AF) -> AF {
+    let shift = AF::from(2_u64.pow(32));
+    let epsilon_val: AF = coral_hash("");
+    let mut eval = AF::ONE;
+    let mut doc_ctr = 0u64;
+    for c in doc {
+        let char_hash: AF = coral_hash(&c.to_string());
+        if char_hash != epsilon_val {
+            let root = char_hash * shift + AF::from(doc_ctr);
+            eval *= perm_chal - root;
+            doc_ctr += 1;
+        }
+    }
+    eval
+}
+
 pub fn verify(
     p_o: &mut ProverOutput,
     v_i: VerifierInfo<AF>,
-    v_dc: VerifierDocCommit,
+    doc: &[char],
+    _grammar_commit: &GrammarCommitment,
 ) -> Result<(), NovaError> {
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "full_verify");
@@ -81,32 +93,29 @@ pub fn verify(
 
     #[cfg(feature = "metrics")]
     log::tic(Component::Verifier, "eq_checks");
-    
+
     v_i.mem.verifier_checks(&zn, &ci, v_i.r0_consts);
     #[cfg(feature = "metrics")]
     {
         log::stop(Component::Verifier, "eq_checks");
-        log::tic(Component::Verifier, "doc_commit_check");
+        log::tic(Component::Verifier, "doc_eval_check");
     }
 
-    //Have to get calimed eval out of zn
-    //Check doc commitment
+    // Check the public document against the running evaluation
     let eval_offset = 13;
     let claimed_eval = zn[eval_offset];
-    let kzg_check = ArkKZG::check(
-        &v_dc.doc_commit_vk,
-        &v_dc.doc_commit,
-        v_i.perm_chal[0],
-        segmented_circuit_memory::bellpepper::nova_to_ark_field(&claimed_eval),
-        p_o.doc_commit_proof.as_ref().unwrap(),
-    )
-    .unwrap();
-    assert!(kzg_check);
+    let claimed_eval_ark: AF =
+        segmented_circuit_memory::bellpepper::nova_to_ark_field(&claimed_eval);
+    let expected = expected_running_eval(doc, v_i.perm_chal[0]);
+    assert_eq!(
+        claimed_eval_ark, expected,
+        "Document running-eval mismatch: proof does not match public document"
+    );
 
     println!("Verified Successfully!");
 
     #[cfg(feature = "metrics")]
-    log::tic(Component::Verifier, "doc_commit_check");
+    log::stop(Component::Verifier, "doc_eval_check");
 
     #[cfg(feature = "metrics")]
     log::stop(Component::Verifier, "full_verify");

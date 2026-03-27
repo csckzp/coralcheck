@@ -1,21 +1,18 @@
 use crate::{circuit::multi_node_step, parser::GrammarGraph, solver::*, util::*};
-use ark_bn254::Bn254;
-use ark_poly_commit::kzg10::{self, Commitment, Powers};
 use ark_relations::gr1cs::{ConstraintSystem, OptimizationGoal, SynthesisError, SynthesisMode};
-use ark_serialize::{CanonicalDeserialize, CanonicalSerialize};
+use ark_serialize::CanonicalSerialize;
 
 use ark_serialize::CompressedChecked;
-use ark_std::UniformRand;
 use nova_snark::{
     errors::NovaError,
     frontend::LinearCombination,
     nova::{CompressedSNARK, ProverKey, PublicParams, RandomLayer, RecursiveSNARK},
     traits::ROConstants,
 };
-use rand::rngs::OsRng;
 use segmented_circuit_memory::bellpepper::FCircuit;
 use serde::{Deserialize, Serialize};
 use serde_with::serde_as;
+use sha2::{Digest, Sha256};
 use std::sync::Arc;
 use std::sync::mpsc;
 use std::thread;
@@ -42,62 +39,74 @@ pub struct ProverOutput {
     pub compressed_snark: CompressedSNARK<E1, E2, C1, S1, S2>,
     #[serde_as(as = "CompressedChecked<Option<CoralStepCircuit<AF>>>")]
     pub empty: Option<CoralStepCircuit<AF>>,
-    #[serde_as(as = "CompressedChecked<Option<kzg10::Proof<Bn254>>>")]
-    pub doc_commit_proof: Option<kzg10::Proof<Bn254>>,
     pub z_0: Vec<N1>,
 }
-#[derive(CanonicalSerialize, CanonicalDeserialize)]
 
-pub struct CoralDocCommitment<'b> {
-    pub blind: AF,
-    pub doc_commit: Commitment<Bn254>,
-    pub commit_rand: kzg10::Randomness<AF, PolyBn254>,
-    pub doc_commit_poly: PolyBn254,
-    pub doc_ck: Powers<'b, Bn254>,
+/// Commitment to a normalized grammar. Produced in commit mode and
+/// consumed by prove/verify modes.
+#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct GrammarCommitment {
+    /// SHA-256 digest of the canonical grammar tables.
+    pub digest: [u8; 32],
+    /// Number of unique rules (including the ANY sentinel).
+    pub rule_count: usize,
+    /// Maximum number of symbols in a single rule production.
+    pub max_rule_size: usize,
+    /// Number of negative-predicate rules.
+    pub np_count: usize,
+    /// Maximum size of a negative-predicate polynomial.
+    pub max_np_rule_size: usize,
+    /// Number of whitespace entries.
+    pub ws_count: usize,
 }
 
-pub fn run_doc_committer<'a>(doc: &Vec<char>, ck: &Powers<'a, Bn254>) -> CoralDocCommitment<'a> {
-    #[cfg(feature = "metrics")]
-    log::tic(Component::Generator, "doc_commit");
+/// Build a canonical SHA-256 commitment over the normalized grammar tables.
+pub fn commit_grammar(g: &GrammarGraph) -> GrammarCommitment {
+    let rule_vec = make_rule_vector::<AF>(g);
+    let np_vec = make_np_vector::<AF>(g);
+    let ws_vec = make_whitespace_vec::<AF>(g);
 
-    let blind = AF::rand(&mut OsRng);
-
-    let shift = AF::from(2_u64.pow(32));
-
-    let mut doc_roots = doc
-        .iter()
-        .enumerate()
-        .map(|(i, c)| {
-            let base_shift = shift * (coral_hash::<AF>(&c.to_string()));
-            base_shift + to_F::<AF>(i)
-        })
-        .collect::<Vec<_>>();
-    doc_roots.push(blind);
-
-    #[cfg(feature = "para")]
-    let doc_commit_poly = build_root_products_para::<AF>(&doc_roots[..]);
-
-    #[cfg(not(feature = "para"))]
-    let doc_commit_poly = build_root_products::<AF>(&doc_roots[..]);
-
-    let (comms, rand) = ArkKZG::commit(ck, &doc_commit_poly, Some(1), Some(&mut OsRng)).unwrap();
-
-    #[cfg(feature = "metrics")]
-    log::stop(Component::Generator, "doc_commit");
-
-    CoralDocCommitment {
-        blind,
-        doc_commit: comms,
-        commit_rand: rand,
-        doc_commit_poly,
-        doc_ck: ck.clone(),
+    let mut hasher = Sha256::new();
+    for row in &rule_vec {
+        for val in row {
+            let mut buf = Vec::new();
+            val.serialize_compressed(&mut buf).unwrap();
+            hasher.update(&buf);
+        }
     }
+    for row in &np_vec {
+        for val in row {
+            let mut buf = Vec::new();
+            val.serialize_compressed(&mut buf).unwrap();
+            hasher.update(&buf);
+        }
+    }
+    for val in &ws_vec {
+        let mut buf = Vec::new();
+        val.serialize_compressed(&mut buf).unwrap();
+        hasher.update(&buf);
+    }
+    let digest: [u8; 32] = hasher.finalize().into();
+
+    GrammarCommitment {
+        digest,
+        rule_count: g.rule_count,
+        max_rule_size: g.max_rule_size,
+        np_count: g.np.len(),
+        max_np_rule_size: g.max_np_rule_size,
+        ws_count: ws_vec.len(),
+    }
+}
+
+/// Returns `true` when the grammar produces the same commitment.
+pub fn verify_grammar_commitment(g: &GrammarGraph, commitment: &GrammarCommitment) -> bool {
+    let computed = commit_grammar(g);
+    computed.digest == commitment.digest
 }
 
 pub fn setup<ArkF: ArkPrimeField>(
     grammar_graph: &GrammarGraph,
     batch_size: usize,
-    doc_blind: ArkF,
 ) -> Result<
     (
         ProverInfo,
@@ -107,7 +116,7 @@ pub fn setup<ArkF: ArkPrimeField>(
     ),
     SynthesisError,
 > {
-    let mut base = CoralStepCircuit::new(grammar_graph, batch_size, doc_blind);
+    let mut base = CoralStepCircuit::new(grammar_graph, batch_size);
 
     let r0_consts = ROConstants::<E1>::default();
 
@@ -291,7 +300,6 @@ pub fn run_prove(
     Ok(ProverOutput {
         compressed_snark: compressed_snark.unwrap(),
         z_0: z0_primary,
-        doc_commit_proof: None,
         empty: None,
     })
 }
@@ -300,7 +308,6 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
     grammar_graph: &GrammarGraph,
     base: CoralStepCircuit<AF>,
     p_i: &mut ProverInfo,
-    doc_commit: CoralDocCommitment<'_>,
     pp: &PublicParams<E1, E2, C1>,
 ) -> Result<ProverOutput, NovaError> {
     let n_rounds = u32::div_ceil(
@@ -309,8 +316,6 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
     ) as usize;
 
     let mut base = base;
-
-    let perm_chal = base.mem.as_ref().unwrap().perm_chal.clone();
 
     let mut irw = InterRoundWires::new();
 
@@ -342,33 +347,16 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
     {
         log::stop(Component::Prover, "constraint_gen");
         log::r1cs(Component::Prover, "Num Constraints", pp.num_constraints().0);
-        // println!( "Num Constraints Secondary {:?}", pp.num_constraints().1);
         log::tic(Component::Prover, "prove_e2e");
     }
 
-    let doc_ck = doc_commit.doc_ck.clone();
-    let doc_commit_poly = doc_commit.doc_commit_poly.clone();
-    let commit_rand = doc_commit.commit_rand.clone();
-
-    let (doc_proof_sender, doc_proof_recv) = mpsc::channel();
     let now = Instant::now();
 
-    let mut prover_output = thread::scope(|s| {
+    let prover_output = thread::scope(|s| {
         s.spawn(move || {
             run_wit_synth(sender_main, saved_nova_matrices, base, irw, n_rounds);
         });
-        s.spawn(move || {
-            #[cfg(feature = "metrics")]
-            log::tic(Component::Prover, "doc_commit_proof");
-            let doc_proof = ArkKZG::open(&doc_ck, &doc_commit_poly, perm_chal[0], &commit_rand);
-            assert!(doc_proof.is_ok());
-            doc_proof_sender
-                .send(doc_proof.unwrap())
-                .expect("Failed to send doc proof");
-            #[cfg(feature = "metrics")]
-            log::stop(Component::Prover, "doc_commit_proof");
-        });
-        let handle3 = s.spawn(move || {
+        let handle = s.spawn(move || {
             run_prove(
                 recv_main,
                 &mut recursive_snark,
@@ -379,15 +367,11 @@ pub fn run_para_prover<ArkF: ArkPrimeField>(
                 n_rounds,
             )
         });
-        handle3.join().expect("Proving thread panicked")
+        handle.join().expect("Proving thread panicked")
     })
     .unwrap();
 
     println!("Proving time: {:?}", now.elapsed());
-
-    let proof_ark_kzg = doc_proof_recv.recv().expect("Failed to receive doc proof");
-
-    prover_output.doc_commit_proof = Some(proof_ark_kzg);
 
     #[cfg(feature = "metrics")]
     {
@@ -408,7 +392,6 @@ pub fn run_prover<ArkF: ArkPrimeField>(
     grammar_graph: &GrammarGraph,
     base: &mut CoralStepCircuit<AF>,
     p_i: &mut ProverInfo,
-    doc_commit: CoralDocCommitment<'_>,
     pp: &PublicParams<E1, E2, C1>,
 ) -> Result<ProverOutput, NovaError> {
     let n_rounds = u32::div_ceil(
@@ -490,18 +473,9 @@ pub fn run_prover<ArkF: ArkPrimeField>(
         log::stop(Component::Prover, "prove_e2e");
     }
 
-    let proof_ark_kzg = ArkKZG::open(
-        &doc_commit.doc_ck,
-        &doc_commit.doc_commit_poly,
-        base.mem.as_mut().unwrap().perm_chal[0],
-        &doc_commit.commit_rand,
-    );
-    assert!(proof_ark_kzg.is_ok());
-
     Ok(ProverOutput {
         compressed_snark: compressed_snark.unwrap(),
         z_0: z0_primary,
-        doc_commit_proof: Some(proof_ark_kzg.unwrap()),
         empty: None,
     })
 }

@@ -1,17 +1,11 @@
 use crate::{parser::GrammarGraph, prover::make_coral_circuit, solver::*};
-use ark_bn254::Bn254;
-use ark_ff::{BigInteger256, FftField, PrimeField};
-use ark_poly::DenseUVPolynomial;
-use ark_poly::univariate::DensePolynomial;
-use ark_poly_commit::Error;
-use ark_poly_commit::kzg10::{self, Powers, UniversalParams, VerifierKey};
+use ark_ff::{BigInteger256, PrimeField};
 use csv::Writer;
 use nova_snark::{
     nova::PublicParams,
     provider::{Bn256EngineKZG, GrumpkinEngine},
     traits::{Engine, snark::default_ck_hint},
 };
-use rand::rngs::OsRng;
 use segmented_circuit_memory::bellpepper::FCircuit;
 use std::fs::OpenOptions;
 use std::path::PathBuf;
@@ -26,8 +20,6 @@ pub trait ArkPrimeField: PrimeField<BigInt = BigInteger256> {}
 impl<F: PrimeField<BigInt = BigInteger256>> ArkPrimeField for F {}
 
 pub type AF = ark_bn254::Fr;
-pub type PolyBn254 = DensePolynomial<AF>;
-pub type ArkKZG = kzg10::KZG10<Bn254, PolyBn254>;
 
 pub type HashMap<K, V> = std::collections::HashMap<K, V>;
 pub type HashSet<K> = std::collections::HashSet<K>;
@@ -35,8 +27,6 @@ pub type HashSet<K> = std::collections::HashSet<K>;
 pub fn new_hash_map<K, V>() -> HashMap<K, V> {
     HashMap::default()
 }
-
-pub type LDE<F> = DensePolynomial<F>;
 
 pub type E1 = Bn256EngineKZG;
 pub type E2 = GrumpkinEngine;
@@ -48,59 +38,40 @@ pub type C1 = FCircuit<<E1 as Engine>::Scalar>;
 pub type N1 = <E1 as Engine>::Scalar;
 pub type N2 = <E2 as Engine>::Scalar;
 
-pub fn get_name(opt_1: Option<String>, cmt_or_prf: bool, p_or_v: bool) -> String {
-    if opt_1.is_some() {
-        if p_or_v {
-            format!("p_{}", opt_1.unwrap())
-        } else {
-            format!("v_{}", opt_1.unwrap())
-        }
-    } else if cmt_or_prf {
-        if p_or_v {
-            "prover_data.cmt".to_string()
-        } else {
-            "verifier_data.cmt".to_string()
-        }
-    } else {
-        "to_verify.proof".to_string()
+pub fn get_commit_name(opt_name: Option<String>) -> String {
+    match opt_name {
+        Some(name) => name,
+        None => "grammar.cmt".to_string(),
     }
 }
 
-pub fn build_root_products<F: FftField>(roots: &[F]) -> LDE<F> {
-    let l = roots.len();
-
-    if l == 1 {
-        return LDE::from_coefficients_vec(vec![-roots[0], F::one()]);
+pub fn get_proof_name(opt_name: Option<String>) -> String {
+    match opt_name {
+        Some(name) => name,
+        None => "to_verify.proof".to_string(),
     }
-
-    let mid = l / 2;
-    let (left, right) = roots.split_at(mid);
-
-    let left_poly = build_root_products(left);
-    let right_poly = build_root_products(right);
-
-    left_poly * right_poly
 }
 
-pub fn build_root_products_para<F: FftField>(roots: &[F]) -> LDE<F> {
-    let l = roots.len();
-
-    if l == 1 {
-        return LDE::from_coefficients_vec(vec![-roots[0], F::one()]);
-    }
-
-    let mid = l / 2;
-    let (left, right) = roots.split_at(mid);
-
-    // Parallelize the recursive calls using Rayon
-    let (left_poly, right_poly) = rayon::join(
-        || build_root_products(left),  // Run in parallel
-        || build_root_products(right), // Run in parallel
-    );
-
-    left_poly * right_poly
+/// Read and compile a grammar file without a document.
+/// Produces a `GrammarGraph` with populated rule tables suitable for
+/// grammar commitment (but no LCRS parse tree).
+pub fn read_grammar(pest_file: String) -> GrammarGraph {
+    let grammar = fs::read_to_string(pest_file).expect("Failed to read grammar file");
+    let mut grammar_graph = GrammarGraph::new();
+    grammar_graph
+        .compile_grammar(&grammar)
+        .expect("Failed to compile grammar");
+    grammar_graph
 }
 
+/// Read a document file and return its characters.
+pub fn read_doc(input: String) -> Vec<char> {
+    let input_text = fs::read_to_string(input).expect("Failed to read input file");
+    input_text.chars().collect()
+}
+
+/// Read grammar + document, parse the document, and build the full
+/// LCRS parse tree needed for proving.
 pub fn read_graph(pest_file: String, input: String) -> (GrammarGraph, Vec<char>) {
     let grammar = fs::read_to_string(pest_file).expect("Failed to read grammar file");
     let input_text = fs::read_to_string(input).expect("Failed to read input file");
@@ -128,42 +99,6 @@ pub fn gen_pp<AF: ArkPrimeField>(empty_csc: &mut CoralStepCircuit<AF>) -> Public
     )
     .unwrap();
     pp
-}
-
-pub fn trim<'a>(
-    pp: UniversalParams<Bn254>,
-    mut supported_degree: usize,
-) -> Result<(Powers<'a, Bn254>, VerifierKey<Bn254>), Error> {
-    if supported_degree == 1 {
-        supported_degree += 1;
-    }
-    let powers_of_g = pp.powers_of_g[..=supported_degree].to_vec();
-    let powers_of_gamma_g = (0..=supported_degree)
-        .map(|i| pp.powers_of_gamma_g[&i])
-        .collect();
-
-    let powers = Powers {
-        powers_of_g: ark_std::borrow::Cow::Owned(powers_of_g),
-        powers_of_gamma_g: ark_std::borrow::Cow::Owned(powers_of_gamma_g),
-    };
-    let vk = VerifierKey {
-        g: pp.powers_of_g[0],
-        gamma_g: pp.powers_of_gamma_g[&0],
-        h: pp.h,
-        beta_h: pp.beta_h,
-        prepared_h: pp.prepared_h.clone(),
-        prepared_beta_h: pp.prepared_beta_h.clone(),
-    };
-    Ok((powers, vk))
-}
-
-pub fn gen_ark_pp<'a>(doc_len: usize) -> (Powers<'a, Bn254>, kzg10::VerifierKey<Bn254>) {
-    let rng = &mut OsRng;
-    let ark_kzg_pp = ArkKZG::setup(doc_len + 1, false, rng).unwrap();
-
-    let (ck, vk) = trim(ark_kzg_pp, doc_len + 1).unwrap();
-
-    (ck, vk)
 }
 
 pub fn metrics_file(
