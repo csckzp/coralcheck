@@ -295,8 +295,8 @@ After the refactor compiles, remove these if unused:
 * [x] `--commit` emits a grammar commitment, not a document commitment
 * [x] `--prove` accepts a public document and a grammar commitment
 * [x] `--verify` rejects mismatched grammar commitments
-* [ ] end-to-end proof still succeeds on the sample grammars
-  * Requires `ppot_0080_23.ptau` file (see README)
+* [x] end-to-end proof still succeeds on the sample grammars
+  * Verified: test_simple, json, toml, c_simple all pass `--e2e`
 * [x] README examples match the new workflow
 
 
